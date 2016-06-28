@@ -4,3 +4,137 @@
 /* endinject */
 
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+$mainColor : #1d628b;
+$lightGray : #eeeeee;
+$darkGray : #444444;
+$bodyColor : #f3f3f3;
+$colorPlaceHolder : #aaaaaa;
+$colorLetterBackBlue : #ffffff;
+$backgroundPortlet : #ffffff;
+$secondaryButtonBackground : #ffffff;
+$secondaryButtonBorder : #444444;
+
+
+/** REWRITE BOOTSTRAP STYLES **/
+body{
+  background-color: $bodyColor;
+  color: $darkGray;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 14px;
+}
+
+/** HEADERS **/
+h1{
+  font-size:30px;
+  color:$mainColor;
+}
+
+h2{
+  font-size:24px;
+  color:$mainColor;
+}
+
+h3{
+  font-size:18px;
+  color: $darkGray;
+}
+
+h4{
+  font-size:16px;
+  color: $darkGray;
+}
+
+/** FORM ELEMENTS **/
+
+label{
+  font-size:16px;
+}
+
+::-webkit-input-placeholder {
+   color: $colorPlaceHolder;
+   font-size:18px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $colorPlaceHolder;
+  font-size:18px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $colorPlaceHolder;
+   font-size:18px;
+}
+
+:-ms-input-placeholder {
+   color: $colorPlaceHolder;
+   font-size:18px;
+}
+
+/** INPUT GROUPS **/
+.input-group{
+  .input-group-addon{
+    background-color: $darkGray;
+    border: 1px solid $darkGray;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    color: #ffffff;
+  }
+
+  .form-control{
+    border-radius:0;
+    -webkit-border-radius:0;
+    border: 1px solid $darkGray;
+  }
+
+  &.input-group-primary{
+    .input-group-addon{
+      background-color: $mainColor;
+      border-color:$mainColor;
+    }
+
+    .form-control{
+      border-color:$mainColor;
+    }
+  }
+
+}
+
+/** THUMBNAILS  **/
+
+.thumbnail{
+  padding:15px;
+  border:1px solid #eee;
+
+  .caption{
+    text-align:center;
+  }
+
+}
+
+/** BUTTONS **/
+.btn{
+  border-radius:0;
+  -webkit-border-radius:0;
+  font-size:18px;
+
+  &.btn-primary{
+    background-color:$mainColor;
+    border-color:$mainColor;
+  }
+
+  &.btn-default{
+    background-color:$secondaryButtonBackground;
+    border-color:$secondaryButtonBorder;
+    color:$darkGray;
+  }
+}
+
+/** PORTLETS **/
+.portlet{
+  .portlet-content{
+    background:$backgroundPortlet;
+    border-color:1px solid $lightGray;
+    padding:20px;
+  }
+}
