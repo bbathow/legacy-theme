@@ -15,6 +15,14 @@ $backgroundPortlet : #ffffff;
 $secondaryButtonBackground : #ffffff;
 $secondaryButtonBorder : #444444;
 
+/** Sortcodes **/
+.m0{
+	margin:0 !important;
+}
+
+.p0{
+	padding:0 !important;
+}
 
 /** REWRITE BOOTSTRAP STYLES **/
 body{
@@ -28,21 +36,25 @@ body{
 h1{
   font-size:30px;
   color:$mainColor;
+  margin-top:0;
 }
 
 h2{
   font-size:24px;
   color:$mainColor;
+  margin-top:0;
 }
 
 h3{
   font-size:18px;
   color: $darkGray;
+  margin-top:0;
 }
 
 h4{
   font-size:16px;
   color: $darkGray;
+  margin-top:0;
 }
 
 /** FORM ELEMENTS **/
@@ -103,11 +115,15 @@ label{
 /** THUMBNAILS  **/
 
 .thumbnail{
-  padding:15px;
-  border:1px solid #eee;
+  padding:0px;
+  border:0;
 
   .caption{
     text-align:center;
+  }
+  
+  img{
+	width:100%;
   }
 
 }
