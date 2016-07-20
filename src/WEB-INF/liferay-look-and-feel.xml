@@ -17,5 +17,8 @@
 			<default-portlet-decorator>true</default-portlet-decorator>
 			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
 		</portlet-decorator>
+		<portlet-decorator id="nopadding" name="Decorate">
+			<portlet-decorator-css-class>portlet-nopadding</portlet-decorator-css-class>
+		</portlet-decorator>		
 	</theme>
 </look-and-feel>
