@@ -83,6 +83,8 @@
 <!-- inject:js -->
 <!-- endinject -->
 
+<script src="${javascript_folder}/lib/icheck.js"></script>
+
 </body>
 
 </html>
