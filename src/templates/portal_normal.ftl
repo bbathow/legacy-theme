@@ -46,6 +46,21 @@
 					<a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
 				</#if>
 
+				<section class="header-nav panel">
+				
+					<button class="show-menu">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<div class="search-component">	
+						<#include "${full_templates_path}/search.ftl" />
+					</div>
+				</section>
+				
 			</header>
 
 			<section id="content">
@@ -83,7 +98,7 @@
 <!-- inject:js -->
 <!-- endinject -->
 
-<script src="${javascript_folder}/lib/icheck.js"></script>
+<script src="${javascript_folder}/lib/icheck.min.js"></script>
 
 </body>
 

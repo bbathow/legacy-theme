@@ -33,3 +33,17 @@ Liferay.on(
 	function() {
 	}
 );
+
+$(document).ready(function(){
+
+	$('input[type="checkbox"],input[type="radio"]').iCheck({
+		checkboxClass: 'icheckbox_square-blue',
+		radioClass: 'iradio_square-blue',
+		increaseArea: '20%' // optional
+	});
+	
+	$('.show-menu').click(function(){
+		$(this).find('.icon-bar').toggleClass('active');
+	});
+
+});

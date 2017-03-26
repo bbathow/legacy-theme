@@ -1,0 +1,39 @@
+#breadcrumbs{
+
+	.breadcrumb {
+		background: 0;
+		display: block;
+		float: left;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		line-height:1;
+		
+		li{
+			float:left;
+			
+			&:before{
+				content:"";
+			}
+			
+			+ li::before {
+				color: $darkGray;
+				content: "/ ";
+				float: left;
+				font-size: 18px;
+				padding: 0 5px 0 5px;
+				font-weight:bold;
+			}
+			
+			a{
+				float:left;
+				font-size:18px;
+				color:$darkGray;
+			}
+		
+		}
+		
+		
+	}
+
+}
