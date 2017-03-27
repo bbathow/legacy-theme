@@ -3,9 +3,13 @@
 /* inject:imports */
 /* endinject */
 
+@import "lib/blue";
+
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 
 $mainColor : #1d628b;
+$secondaryColor : #444444;
+
 $lightGray : #eeeeee;
 $darkGray : #444444;
 $bodyColor : #f3f3f3;
@@ -13,7 +17,12 @@ $colorPlaceHolder : #aaaaaa;
 $colorLetterBackBlue : #ffffff;
 $backgroundPortlet : #ffffff;
 $secondaryButtonBackground : #ffffff;
-$secondaryButtonBorder : #444444;
+$secondaryButtonBorder : $secondaryColor;
+
+*{
+	border-radius:0;
+	-webkit-border-radius:0;
+}
 
 /** Sortcodes **/
 .m0{
@@ -29,7 +38,7 @@ body{
   background-color: $bodyColor;
   color: $darkGray;
   font-family: Arial,Helvetica,sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /** HEADERS **/
@@ -42,26 +51,183 @@ h1{
 h2{
   font-size:24px;
   color:$mainColor;
-  margin-top:0;
+  margin:0;
+  
+  + *{
+	margin-top:20px;
+  }
+  
 }
 
 h3{
   font-size:18px;
   color: $darkGray;
-  margin-top:0;
+  margin:0 0 20px 0;
 }
 
 h4{
   font-size:16px;
   color: $darkGray;
-  margin-top:0;
+  margin:0;
+}
+
+p{
+	font-size:16px;
+	line-height:24px;
+	margin-bottom: 20px;
+}
+
+a{
+
 }
 
 /** FORM ELEMENTS **/
 
 label{
-  font-size:16px;
+	font-size:16px;
+	float:left;
+	width:100%;
+	font-weight:normal;
+
+	&.primary{
+		border-color:$mainColor;
+		color:$mainColor;	
+	}
 }
+
+input{
+	
+	float:left;
+	width:100%;
+	border:1px solid $darkGray;
+	line-height:24px;
+	font-size:16px;
+	padding:8px 10px;
+	margin-bottom:20px;
+	
+	&[type="text"],&[type="number"],&[type="email"],&[type="password"]{
+	
+		&[disabled],.disabled{
+			border-color:$lightGray;
+			background:#fff;
+		}
+	
+	}
+	
+	&[type="checkbox"],&[type="radio"]{
+		position:absolute;
+		left:-9999px;
+		
+		+ label{
+			clear: left;
+			float: left;
+			margin-bottom: 20px;
+			padding-left: 25px;
+			width: auto;
+			position:relative;
+			line-height:22px;
+			
+			&:before{
+				width:20px;
+				height:20px;
+				border:1px solid $mainColor;
+				background:#fff;
+				position:absolute;
+				left:0;
+				top:0;
+				content: '';
+				text-align:center;
+			}
+			
+			&.big{
+				padding-left:30px;
+				line-height:25px;
+				
+				&:before{
+					width:25px;
+					height:25px;
+				}	
+				
+			}
+			&.default{
+				&:before{
+					border-color:$secondaryColor;
+				}
+			}	
+			&.light{
+				&:before{
+					border-color:$lightGray;
+				}					
+			}			
+			
+		}
+		
+		&:checked{
+			+ label{
+				&:before{
+					font-family:Material Icons;
+					background:$mainColor;
+					content:'check';
+					color:$colorLetterBackBlue;
+				}
+				
+				&.default{
+					&:before{
+						background:$secondaryColor;
+						color:$colorLetterBackBlue;
+						border-color:$secondaryColor;
+					}					
+				}				
+			}
+		}
+	}	
+	
+	&[type="radio"]{
+
+		+ label{
+			
+			&:before{
+				border-radius:50%;
+				-webkit-border-radius:50%;
+			}	
+		}
+		
+		&:checked{
+		
+			+ label{
+				
+				&:before{
+					border:1px solid $mainColor;
+					color:$mainColor;
+					content:'fiber_manual_record';
+					line-height:18px;
+					background:#ffffff;
+				}
+				
+				&.default{
+					&:before{
+						background:#ffffff;
+						color:$secondaryColor;
+					}
+				}
+
+				&.big{
+					&:before{
+						font-size:19px;
+						line-height:23px;
+					}
+				}	
+			}			
+		}
+	}
+	
+	&.primary{
+		border-color:$mainColor;
+		color:$mainColor;
+	}
+	
+}
+
 
 ::-webkit-input-placeholder {
    color: $colorPlaceHolder;
@@ -70,7 +236,7 @@ label{
 
 :-moz-placeholder { /* Firefox 18- */
    color: $colorPlaceHolder;
-  font-size:18px;
+   font-size:18px;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
@@ -84,32 +250,45 @@ label{
 }
 
 /** INPUT GROUPS **/
-.input-group{
-  .input-group-addon{
-    background-color: $darkGray;
-    border: 1px solid $darkGray;
-    border-radius: 0px;
-    -webkit-border-radius: 0px;
-    color: #ffffff;
-  }
+.form-group{
+	
+	margin-bottom:20px;
 
-  .form-control{
-    border-radius:0;
-    -webkit-border-radius:0;
-    border: 1px solid $darkGray;
-  }
+	.input-group{
+		.input-group-addon{
+			background-color: $darkGray;
+			border: 1px solid $darkGray;
+			border-radius: 0px;
+			-webkit-border-radius: 0px;
+			color: #ffffff;
+			padding:8px 10px;
+			line-height:24px;
+			font-size:16px;	
+			min-width:42px;
+		}
 
-  &.input-group-primary{
-    .input-group-addon{
-      background-color: $mainColor;
-      border-color:$mainColor;
-    }
+		.form-control{
+			border-radius:0;
+			-webkit-border-radius:0;
+			border: 1px solid $darkGray;
+			line-height:24px;
+			font-size:16px;
+			padding:8px 10px;
+			height:auto;	
+		}
 
-    .form-control{
-      border-color:$mainColor;
-    }
-  }
+		&.input-group-primary{
+			.input-group-addon{
+				background-color: $mainColor;
+				border-color:$mainColor;
+			}
 
+			.form-control{
+				border-color:$mainColor;
+				color:$mainColor;
+			}
+		}
+	}
 }
 
 /** THUMBNAILS  **/
@@ -133,6 +312,10 @@ label{
   border-radius:0;
   -webkit-border-radius:0;
   font-size:18px;
+  margin-left:15px;
+  padding: 10px 15px;
+  min-width:100px;
+  line-height:25px;
 
   &.btn-primary{
     background-color:$mainColor;
@@ -148,9 +331,239 @@ label{
 
 /** PORTLETS **/
 .portlet{
-  .portlet-content{
-    background:$backgroundPortlet;
-    border-color:1px solid $lightGray;
-    padding:20px;
-  }
+	margin-bottom:20px;
+	float:left;
+	width:100%;
+
+	.portlet-title-text	{
+		margin-bottom:0;
+	}
+	
+	.portlet-content{
+		background:$backgroundPortlet;
+		border-color:1px solid $lightGray;
+		border-radius:0;
+		padding:20px;
+		float:left;
+		width:100%;
+	}
 }
+
+/** TABLES **/
+
+table{
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+	
+	thead{
+		td,th{
+		    border-bottom: 2px solid #ddd;
+			vertical-align: bottom;
+			border-top: 0 none;
+		}
+	}
+	
+	tbody{
+	
+		td,th{
+			border-top: 1px solid #ddd;
+			line-height: 24px;
+			padding: 10px;
+			vertical-align: top;		
+		}
+	
+	}
+}
+
+/** DEFINITION LIST **/
+
+dl{
+
+	dt{
+	
+	}
+	
+	dd{
+	
+	}
+}
+
+/* CONTENT */
+#content{
+	float:left;
+	width:100%;
+}
+
+.header-nav{
+
+	float:left;
+	width:100%;
+	background:#fff;
+
+	.show-menu{
+		padding:20px;
+		background:0;
+		border:0;
+		width:23px;
+		height:16px;
+		box-sizing:content-box;
+		position:relative;
+		float:left;
+		
+		.icon-bar{
+			height:2px;
+			width:23px;
+			background:$mainColor;
+			display:block;
+			position:absolute;
+			top:20px;
+			left:20px;	
+			transition:.25s ease-in-out;	
+			
+			&:nth-child(3),&:nth-child(4){
+				top:27px;
+			}
+
+			&:nth-child(5){
+				top:34px;
+			}							
+			&.active{
+			
+				&:nth-child(2){
+					width:0;
+					left:50%;
+					top:27px;
+					opacity:0;
+				}
+
+				&:nth-child(3){
+					transform:rotate(45deg)
+				}
+
+				&:nth-child(4){
+					transform:rotate(-45deg)
+				}
+
+				&:nth-child(5){
+					width:0;
+					left:50%;
+					top:27px;
+					opacity:0;
+				}				
+			
+			}																
+		}
+	}
+}
+
+
+/** WRAPPER **/
+
+#wrapper{
+	position:relative;
+	&.aside-bar-active{
+		.wrapper{
+			width:calc(100% - 300px);
+			
+		}
+		.aside-bar{
+			transform:translate(300px,0);
+		}
+	}
+}
+
+.wrapper{
+	float:right;
+	transition: all 0.3s ease-out 0s;
+	width:100%;
+}
+
+/** ASIDE BAR **/
+
+.aside-bar{
+	height: 100%;
+	left: -300px;
+	position: fixed;
+	top: 0;
+	width: 300px;
+	transition: all 0.3s ease-out 0s;
+	background:$darkGray;
+	
+	#heading{
+		height:100px;
+		backgrOund:$mainColor;
+		display:flex;
+		align-items:center;
+		padding:20px;
+		
+		.heading-user{
+			align-items: center;
+			display: flex;
+			float: left;
+			width: 100%;
+			
+			.heading-user-img{
+				border-radius:50%;
+				-webkit-border-radius:50%;
+				overflow:hidden;
+				text-align:center;
+				float:left;
+			}
+			
+			.heading-user-name{
+				color:$lightGray;
+				font-size:18px;
+				padding-left:20px;
+				float:left;
+				width:calc(100% - 70px);
+			}
+			
+			.heading-user-menu-icon{
+				color:$lightGray;
+				float:right;
+				text-align:right;
+				cursor:pointer;
+			}
+		}
+	}
+	
+	ul{
+		margin:0;
+		padding:10px 20PX;
+		border-top:2px solid #fff;
+		list-style:none;
+		
+		li{
+			float:left;
+			width:100%;
+			a{
+				padding:10px 0;
+				color:$lightGray;
+				font-size:18px;
+				float:left;
+				width:100%;
+				
+				&:hover{
+					text-decoration:none;
+				}
+			}
+			
+			.delete-tab{
+				color:$lightGray;
+			}
+		}
+	}
+}
+
+.has-control-menu{
+	.aside-bar{
+		margin-top:64px;
+	}
+}
+
+/** COMPONENT IMPORTS **/
+
+@import "component-breadcrumb";
+
+@import "component-search";

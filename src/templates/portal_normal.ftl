@@ -10,6 +10,9 @@
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
 	<@liferay_util["include"] page=top_head_include />
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
 </head>
 
 <body class="${css_class}">
@@ -21,31 +24,32 @@
 <@liferay.control_menu />
 
 <div class="container-fluid" id="wrapper">
-	
+		<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+			<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
+		</a>
+		
 		<#if has_navigation && is_setup_complete>
 			<#include "${full_templates_path}/navigation.ftl" />
 		</#if>
 	
 		<div class="wrapper">
 			<header id="banner" role="banner">
-				<div id="heading">
-					<h1 class="site-title">
-						<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-							<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
-						</a>
 
-						<#if show_site_name>
-							<span class="site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-								${site_name}
-							</span>
-						</#if>
-					</h1>
-				</div>
-
-				<#if !is_signed_in>
-					<a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
-				</#if>
-
+				<section class="header-nav panel">
+				
+					<button class="show-menu">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<div class="search-component">	
+						<#include "${full_templates_path}/search.ftl" />
+					</div>
+				</section>
+				
 			</header>
 
 			<section id="content">
@@ -82,8 +86,6 @@
 
 <!-- inject:js -->
 <!-- endinject -->
-
-<script src="${javascript_folder}/lib/icheck.js"></script>
 
 </body>
 

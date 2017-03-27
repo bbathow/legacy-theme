@@ -33,3 +33,14 @@ Liferay.on(
 	function() {
 	}
 );
+
+
+$(document).ready(function(){
+
+	$('.show-menu').on('click',function(){
+	
+		$(this).find('.icon-bar').toggleClass('active');
+		$('#wrapper').toggleClass('aside-bar-active');
+	});
+
+});
