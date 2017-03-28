@@ -24,7 +24,7 @@
 <@liferay.control_menu />
 
 <div class="container-fluid" id="wrapper">
-		<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+		<a style="display:none;" class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
 			<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
 		</a>
 		
@@ -85,7 +85,10 @@
 <@liferay_util["include"] page=bottom_include />
 
 <!-- inject:js -->
+<script src="${javascript_folder}/libs/owl.carousel.min.js" type="text/javascript"/>
 <!-- endinject -->
+
+
 
 </body>
 

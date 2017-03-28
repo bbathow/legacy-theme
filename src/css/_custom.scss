@@ -3,7 +3,10 @@
 /* inject:imports */
 /* endinject */
 
-@import "lib/blue";
+/** LIBS IMPORTS **/
+@import "libs/owl.carousel";
+
+@import "libs/owl.theme";
 
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 
@@ -460,35 +463,104 @@ dl{
 
 /** WRAPPER **/
 
+@keyframes asideBarOut{
+
+	0%{
+		visibility:visible;
+	}
+	
+	99%{
+		visibility:visible;
+	}
+	
+	100%{
+		visibility:hidden;
+	}
+
+}
+
+
+@keyframes wrapperBarOut{
+
+	0%{
+		margin-left:300px;
+		position:fixed;
+		overflow-x:hidden;
+		overflow-y:auto;
+		height:100%;
+		width:calc(100% - 300px);
+		z-index:10;	
+	}
+	
+	100%{
+		margin-left:0;
+		position:fixed;
+		overflow-x:hidden;
+		overflow-y:auto;
+		height:100%;
+		width:100%;
+		z-index:10;	
+	}
+
+}
+
 #wrapper{
 	position:relative;
+	padding:0;
 	&.aside-bar-active{
 		.wrapper{
+			transition: all 0.3s ease-out 0s;
+			margin-left:300px;
+			position:fixed;
+			overflow-x:hidden;
+			overflow-y:auto;
+			height:100%;
 			width:calc(100% - 300px);
+			z-index:10;		
 			
 		}
 		.aside-bar{
-			transform:translate(300px,0);
+			visibility:visible;
+			z-index:9;
 		}
 	}
+	
+	&.aside-bar-closed{
+		.aside-bar{
+			visibility:hidden;
+			animation-duration: 0.3s;
+			animation-name: asideBarOut;
+			animation-timing-function:ease-out;			
+		}
+		
+		.wrapper{
+			animation-duration: 0.3s;
+			animation-name: wrapperBarOut;
+			animation-timing-function:ease-out;			
+		}		
+	}	
 }
 
 .wrapper{
 	float:right;
-	transition: all 0.3s ease-out 0s;
 	width:100%;
+	padding:20px;
+	background:$bodyColor;
+	margin-left:0px;
 }
 
 /** ASIDE BAR **/
 
 .aside-bar{
 	height: 100%;
-	left: -300px;
+	left: 0px;
 	position: fixed;
 	top: 0;
 	width: 300px;
-	transition: all 0.3s ease-out 0s;
 	background:$darkGray;
+	z-index:-1;
+	opacity:1;
+	visibility:hidden;
 	
 	#heading{
 		height:100px;
@@ -527,40 +599,56 @@ dl{
 			}
 		}
 	}
-	
-	ul{
-		margin:0;
-		padding:10px 20PX;
-		border-top:2px solid #fff;
-		list-style:none;
-		
-		li{
-			float:left;
-			width:100%;
-			a{
-				padding:10px 0;
-				color:$lightGray;
-				font-size:18px;
+	nav{
+		> ul{
+			margin:0;
+			padding:10px 20PX;
+			border-top:2px solid #fff;
+			list-style:none;
+			
+			li{
 				float:left;
 				width:100%;
+				a{
+					padding:10px 0;
+					color:$lightGray;
+					font-size:18px;
+					float:left;
+					width:100%;
+					
+					&:hover{
+						text-decoration:none;
+					}
+				}
 				
-				&:hover{
-					text-decoration:none;
+				.delete-tab{
+					color:$lightGray;
 				}
 			}
-			
-			.delete-tab{
-				color:$lightGray;
-			}
 		}
-	}
+	}	
 }
 
 .has-control-menu{
 	.aside-bar{
 		margin-top:64px;
+		transition: all 0.3s linear 0s;
+	}
+	
+	&.open{
+	
+		.aside-bar{
+			left:320px;
+		}
+	
+		.aside-bar-active{
+			.wrapper{
+				width:calc(100% - 620px);
+			}
+		}	
 	}
 }
+
 
 /** COMPONENT IMPORTS **/
 

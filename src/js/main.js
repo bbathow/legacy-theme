@@ -40,7 +40,20 @@ $(document).ready(function(){
 	$('.show-menu').on('click',function(){
 	
 		$(this).find('.icon-bar').toggleClass('active');
-		$('#wrapper').toggleClass('aside-bar-active');
+		
+		if($('#wrapper').hasClass('aside-bar-active')){
+			
+			$('#wrapper').addClass('aside-bar-closed');
+			$('#wrapper').removeClass('aside-bar-active');
+			
+		}
+		
+		else{
+			$('#wrapper').addClass('aside-bar-active');
+			$('#wrapper').removeClass('aside-bar-closed');
+			
+		}
+		
 	});
 
 });
