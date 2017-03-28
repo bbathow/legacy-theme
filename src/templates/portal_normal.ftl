@@ -85,7 +85,7 @@
 <@liferay_util["include"] page=bottom_include />
 
 <!-- inject:js -->
-<script src="${javascript_folder}/libs/owl.carousel.min.js" type="text/javascript"/>
+<script src="${javascript_folder}/libs/owl.carousel.min.js" type="text/javascript"/></script>
 <!-- endinject -->
 
 
