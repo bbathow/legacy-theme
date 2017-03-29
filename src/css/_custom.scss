@@ -334,9 +334,9 @@ input{
 
 /** PORTLETS **/
 .portlet{
-	margin-bottom:20px;
 	float:left;
 	width:100%;
+	margin-bottom:20px;
 
 	.portlet-title-text	{
 		margin-bottom:0;
@@ -346,7 +346,7 @@ input{
 		background:$backgroundPortlet;
 		border-color:1px solid $lightGray;
 		border-radius:0;
-		padding:20px;
+		padding: ceil(($grid-gutter-width / 2));
 		float:left;
 		width:100%;
 	}
@@ -507,6 +507,7 @@ dl{
 #wrapper{
 	position:relative;
 	padding:0;
+	
 	&.aside-bar-active{
 		.wrapper{
 			transition: all 0.3s ease-out 0s;
@@ -544,7 +545,7 @@ dl{
 .wrapper{
 	float:right;
 	width:100%;
-	padding:20px;
+	padding: ceil(($grid-gutter-width / 2));
 	background:$bodyColor;
 	margin-left:0px;
 }
