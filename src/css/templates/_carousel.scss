@@ -1,0 +1,36 @@
+$carousel-arrow-padding:				ceil(($grid-gutter-width / 2));
+$carousel-arrow-font-size:				ceil(($grid-gutter-width));
+$carousel-arrow-line-height:			$carousel-arrow-font-size;
+$carousel-arrow-color:					#fff;
+
+
+.carousel-template{
+
+	img{
+		width:100%;
+	}
+
+	.owl-controls{
+		margin:0;
+		position:absolute;
+		width:100%;
+		top:50%;
+		margin-top: ceil(-($carousel-arrow-line-height + ($carousel-arrow-padding * 2)) /2);
+		
+		.owl-buttons > div{
+			background: 0;
+			font-size: $carousel-arrow-font-size;
+			line-height: $carousel-arrow-line-height;
+			margin: 0;
+			padding: $carousel-arrow-padding;
+			color: $carousel-arrow-color;
+			
+			&.owl-next{
+				float:right;
+			}
+			&.owl-prev{
+				float:left;
+			}			
+		}
+	}
+}

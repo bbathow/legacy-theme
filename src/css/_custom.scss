@@ -333,23 +333,45 @@ input{
 }
 
 /** PORTLETS **/
-.portlet{
-	float:left;
-	width:100%;
-	margin-bottom:20px;
+.portlet-boundary{
 
-	.portlet-title-text	{
-		margin-bottom:0;
-	}
-	
-	.portlet-content{
-		background:$backgroundPortlet;
-		border-color:1px solid $lightGray;
-		border-radius:0;
-		padding: ceil(($grid-gutter-width / 2));
+	.portlet{
 		float:left;
 		width:100%;
+		margin-bottom:20px;
+
+		.portlet-title-text	{
+			margin-bottom:0;
+		}
+		
+		.portlet-content{
+			background:$backgroundPortlet;
+			border:1px solid $lightGray;
+			border-radius:0;
+			padding: ceil(($grid-gutter-width / 2));
+			float:left;
+			width:100%;
+		}
 	}
+	
+	&.portlet-fullWidth{
+		margin-left: ceil(-($grid-gutter-width / 2));
+		margin-right: ceil(-($grid-gutter-width / 2));
+		
+		
+		.portlet-content{
+			padding:0;
+			border:0;
+		}	
+	}
+	
+	&.portlet-noPadding{
+		.portlet-content{
+			padding:0;
+			border:0;
+			background:0;
+		}	
+	}	
 }
 
 /** TABLES **/
@@ -650,6 +672,9 @@ dl{
 	}
 }
 
+/** Templates **/
+
+@import "templates";
 
 /** COMPONENT IMPORTS **/
 
