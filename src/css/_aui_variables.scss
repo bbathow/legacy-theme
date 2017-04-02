@@ -1,14 +1,27 @@
 // Icon paths
 
-$FontAwesomePath: "aui/lexicon/fonts/alloy-font-awesome/font";
-$font-awesome-path: "aui/lexicon/fonts/alloy-font-awesome/font";
-$icon-font-path: "aui/lexicon/fonts/";
+$FontAwesomePath: 						"aui/lexicon/fonts/alloy-font-awesome/font";
+$font-awesome-path: 					"aui/lexicon/fonts/alloy-font-awesome/font";
+$icon-font-path: 						"aui/lexicon/fonts/";
 
 
 // CUSTOM VARIABLES
+$mainColor : 							#1d628b;
 
-$grid-gutter-width: 40px;
+$grid-gutter-width: 					20px;
 
-$card-gutter-width: ceil($grid-gutter-width / 2);
+$card-gutter-width: 					ceil($grid-gutter-width / 2);
+$card-margin-bottom: 					0;
 
-$border-radius-base: 0;
+$panel-heading-padding:					ceil($grid-gutter-width / 2) $grid-gutter-width;
+$panel-default-heading-bg: 				$mainColor;
+$panel-body-padding:					$grid-gutter-width;
+$panel-footer-bg: 						#ffffff;
+$panel-footer-padding: 					ceil($grid-gutter-width / 2) $grid-gutter-width;
+$panel-inner-border:  					#eee;
+$panel-default-border: 					#eee;
+$panel-footer-bg: 						#ffffff;
+$panel-default-text: 					#ffffff;
+$panel-inner-border: 					#eee;
+
+$border-radius-base: 					0;

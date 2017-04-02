@@ -16,7 +16,7 @@
 				content:"";
 			}
 			
-			+ li::before {
+			+ li:before {
 				color: $darkGray;
 				content: "/ ";
 				float: left;

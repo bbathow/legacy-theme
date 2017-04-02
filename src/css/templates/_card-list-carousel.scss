@@ -1,0 +1,55 @@
+$card-list-carousel-item-padding:				ceil(($grid-gutter-width / 2));
+
+$card-list-carousel-arrow-padding:				ceil(($grid-gutter-width / 2));
+$card-list-carousel-arrow-font-size:			40px;
+$card-list-carousel-arrow-line-height:			$card-list-carousel-arrow-font-size;
+$card-list-carousel-arrow-color:				$secondaryColor;
+
+$card-list-carousel-container-margin:			ceil((($card-list-carousel-arrow-font-size + ($card-list-carousel-arrow-padding * 2)) - $card-list-carousel-item-padding));
+$card-list-carousel-container-space:			ceil((($card-list-carousel-arrow-font-size + ($card-list-carousel-arrow-padding * 2)) * 2) - ($card-list-carousel-item-padding * 2));
+
+.card-list-carousel-template{
+	position:static;
+	margin-left: ceil(-($grid-gutter-width / 2));
+	width: calc(100% - #{ceil(-($grid-gutter-width))});
+	
+	&.hasNavigation{
+		width: calc(100% - #{$card-list-carousel-container-space});
+		margin-left: $card-list-carousel-container-margin;
+	}
+	
+	img{
+		width:100%;
+	}
+	
+	.owl-wrapper-outer{	
+		
+		.owl-item{
+			padding:0 $card-list-carousel-item-padding;
+		}
+	}
+	.owl-controls{
+		margin:0;
+		position:absolute;
+		width:100%;
+		top:50%;
+		left:0;
+		margin-top: ceil(-($card-list-carousel-arrow-line-height + ($card-list-carousel-arrow-padding * 2)) /2);
+		
+		.owl-buttons > div{
+			background: 0;
+			font-size: $card-list-carousel-arrow-font-size;
+			line-height: $card-list-carousel-arrow-line-height;
+			margin: 0;
+			padding: $card-list-carousel-arrow-padding;
+			color: $card-list-carousel-arrow-color;
+			
+			&.owl-next{
+				float:right;
+			}
+			&.owl-prev{
+				float:left;
+			}			
+		}
+	}
+}

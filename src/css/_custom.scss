@@ -348,15 +348,15 @@ input{
 			background:$backgroundPortlet;
 			border:1px solid $lightGray;
 			border-radius:0;
-			padding: ceil(($grid-gutter-width / 2));
+			padding: ceil(($grid-gutter-width));
 			float:left;
 			width:100%;
 		}
 	}
 	
 	&.portlet-fullWidth{
-		margin-left: ceil(-($grid-gutter-width / 2));
-		margin-right: ceil(-($grid-gutter-width / 2));
+		margin-left: ceil(-($grid-gutter-width));
+		margin-right: ceil(-($grid-gutter-width));
 		
 		
 		.portlet-content{
@@ -415,11 +415,6 @@ dl{
 }
 
 /* CONTENT */
-#content{
-	float:left;
-	width:100%;
-}
-
 .header-nav{
 
 	float:left;
@@ -565,9 +560,7 @@ dl{
 }
 
 .wrapper{
-	float:right;
-	width:100%;
-	padding: ceil(($grid-gutter-width / 2));
+	padding: ceil(($grid-gutter-width)) ceil(($grid-gutter-width)) 0;
 	background:$bodyColor;
 	margin-left:0px;
 }
@@ -672,12 +665,12 @@ dl{
 	}
 }
 
+@import "footer";
+
+/** CUSTOM PORTLETS **/
+
+@import "custom_portlets";
+
 /** Templates **/
 
 @import "templates";
-
-/** COMPONENT IMPORTS **/
-
-@import "component-breadcrumb";
-
-@import "component-search";
