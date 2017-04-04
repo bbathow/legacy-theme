@@ -6,9 +6,56 @@ $icon-font-path: 						"aui/lexicon/fonts/";
 
 
 // CUSTOM VARIABLES
-$mainColor : 							#1d628b;
 
 $grid-gutter-width: 					20px;
+
+/** Colors **/
+
+$gray-base: 							#444444;
+$gray-darker:							#444444;
+$gray-dark:								#444444;
+$gray-light:							#eeeeee;
+$brand-primary:							#1d628b;
+
+/** Scaffolding **/
+$body-bg:								#f3f3f3;
+$text-color:							$gray-base;
+
+/** Typography **/
+$font-family-base:						Arial,Helvetica,sans-serif;
+$font-family-serif: 					$font-family-base;
+$font-family-sans-serif: 				$font-family-serif;
+$font-size-base:						16px;
+$font-size-h1: 							ceil(($font-size-base * 1.875));
+$font-size-h2: 							ceil(($font-size-base * 1.5));
+$font-size-h3: 							ceil(($font-size-base * 1.125));
+$font-size-h4: 							$font-size-base * 1.875;
+$font-size-h5: 							ceil(($font-size-base * 0.875));
+$font-size-h6: 							ceil(($font-size-base * 0.75));
+$line-height-base: 						1.5;
+$headings-line-height: 					1.625;
+
+
+/** Forms **/
+$input-color-placeholder:				#aaaaaa;
+
+/** Navbar **/
+$navbar-default-bg: 					transparent;
+$navbar-default-border: 				transparent;
+$navbar-default-link-color:				$brand-primary;
+/** **/
+$mainColor : 							$brand-primary;
+$lightGray : 							$gray-light;
+$darkGray : 							$gray-base;
+$secondaryColor : 						$gray-base;
+$bodyColor : 							$body-bg;
+$colorPlaceHolder : 					$input-color-placeholder;
+$colorLetterBackBlue : 					#ffffff;
+$backgroundPortlet : 					#ffffff;
+$secondaryButtonBackground : 			#ffffff;
+$secondaryButtonBorder : 				$secondaryColor;
+
+
 
 $card-gutter-width: 					ceil($grid-gutter-width / 2);
 $card-margin-bottom: 					0;
