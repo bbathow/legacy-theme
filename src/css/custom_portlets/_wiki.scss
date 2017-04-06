@@ -1,0 +1,13 @@
+.portlet-wiki{
+	.navbar{
+		margin-left:ceil(-($grid-gutter-width));
+		margin-right:ceil(-($grid-gutter-width));
+
+		.container-fluid-1280{
+			max-width:none;
+		}
+		.basic-search{
+			padding:0;	
+		}		
+	}
+}

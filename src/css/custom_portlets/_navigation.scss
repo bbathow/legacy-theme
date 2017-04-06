@@ -1,0 +1,24 @@
+.portlet-navigation {
+	h2{
+		margin:0 0 ceil($grid-gutter-width / 2) 0;
+	}
+    .list-menu	{
+    	ul{
+	    	padding:0;
+	    	list-style:none;
+	    	margin:0;
+	    	> li {
+	    		a{
+				    padding: 10px 0;
+				    width: 100%;
+				    display: block;
+	    		}
+	    	}
+
+	    	ul{
+	    		padding-left: $grid-gutter-width;
+	    	}
+	    }	
+    }
+
+}
