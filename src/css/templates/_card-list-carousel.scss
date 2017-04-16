@@ -26,6 +26,11 @@ $card-list-carousel-container-space:			ceil((($card-list-carousel-arrow-font-siz
 		
 		.owl-item{
 			padding:0 $card-list-carousel-item-padding;
+			
+			.card{
+				margin-bottom:0;
+			}
+
 		}
 	}
 	.owl-controls{

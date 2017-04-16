@@ -23,5 +23,6 @@
 		<portlet-decorator id="fullwidth" name="Full Width">
 			<portlet-decorator-css-class>portlet-fullWidth</portlet-decorator-css-class>
 		</portlet-decorator>
+                                                                                                                         
 	</theme>
 </look-and-feel>

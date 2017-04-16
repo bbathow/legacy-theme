@@ -8,11 +8,17 @@
 
 @import "libs/owl.theme";
 
+@import "libs/animate";
+
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 
 * {
     border-radius: 0;
     -webkit-border-radius: 0;
+}
+
+body{
+    overflow-x:hidden;
 }
 
 /** Sortcodes **/
@@ -47,7 +53,7 @@ h3 {
 
 h4 {
     color: $darkGray;
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 p {
