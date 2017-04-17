@@ -38,6 +38,14 @@
         border-color: ${gray_base};
     }
 
+    .text-default{
+        color: ${gray_base};
+    }
+
+    .text-primary{
+        color: ${brand_color};
+    }
+
     /** BUTTONS **/
     .btn.btn-default{
         border-color: ${gray_base};
@@ -87,7 +95,11 @@
         color:${brand_color};
     }
 
-    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+    .navbar .navbar-nav > li > a,.navbar .navbar-nav > li > a:hover,.navbar .navbar-nav > li > a:focus{
+        color:${gray_base};
+    }
+
+    .navbar .navbar-nav>.active>a, .navbar .navbar-nav>.active>a:hover, .navbar .navbar-nav>.active>a:focus{
         color:${brand_color};
     }
 
