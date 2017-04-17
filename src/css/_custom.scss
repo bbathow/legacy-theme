@@ -281,16 +281,16 @@ input {
     padding: 10px 15px;
     min-width: 100px;
     line-height: 25px;
-
-    &.btn-primary {
-        background-color: $mainColor;
-        border-color: $mainColor;
-    }
-
+    
     &.btn-default {
         background-color: $secondaryButtonBackground;
         border-color: $secondaryButtonBorder;
         color: $darkGray;
+    }
+
+    &.btn-primary {
+        background-color: $mainColor;
+        border-color: $mainColor;
     }
 }
 

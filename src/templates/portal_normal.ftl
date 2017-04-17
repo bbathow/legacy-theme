@@ -23,6 +23,8 @@
 
 <@liferay.control_menu />
 
+<#include "${full_templates_path}/color_scheme_styles.ftl" />
+
 <div class="container-fluid" id="wrapper">
 
 	<a style="display:none;" class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
@@ -55,10 +57,13 @@
 
 		<section id="content">
 			<h1 class="hide-accessible">${the_title}</h1>
-
-			<nav id="breadcrumbs">
-				<#include "${full_templates_path}/breadcrumbs.ftl" />
-			</nav>
+			
+			<#assign show_breadcrumbs = theme_display.getThemeSetting('Show-Breadcrumbs') />
+			<#if show_breadcrumbs == 'true'>
+				<nav id="breadcrumbs">
+					<#include "${full_templates_path}/breadcrumbs.ftl" />
+				</nav>
+			</#if>
 
 			<#if selectable>
 				<@liferay_util["include"] page=content_include />
@@ -71,6 +76,7 @@
 					<@liferay_util["include"] page=content_include />
 				</@>
 			</#if>
+
 		</section>
 
 		<footer id="footer" role="contentinfo">
