@@ -69,6 +69,10 @@
 			color:$colorLetterBackBlue;
 			margin-bottom:0;
 			border:0;
+
+			.panel-body{
+				padding-top: $grid-gutter-width;
+			}
 		}	
 	}
 }

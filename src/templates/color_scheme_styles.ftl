@@ -13,19 +13,29 @@
 		color:${gray_base};
 	}
 
-	label.primary{
-        border-color: ${brand_color};
-        color: ${brand_color};		
-	}
-
-	label.default{
-        border-color: ${gray_base};
-        color: ${gray_base};		
-	}
-
 	input,input[type="checkbox"]:before, input[type="radio"]:before{
-		border-color: ${brand_color};
+        border-color: ${gray_base};
+        color: ${gray_base};    
 	}
+
+    input[type="checkbox"]+label:before, input[type="radio"]+label:before,
+    input[type="checkbox"]+label.default:before, input[type="radio"]+label.default:before{
+        border-color: ${gray_base};
+    }
+
+    input[type="checkbox"]+label.primary:before, input[type="radio"]+label.primary:before{
+        border-color: ${brand_color};   
+    }
+
+    label.primary,input.primary{
+        border-color: ${brand_color};
+        color: ${brand_color};      
+    }
+
+    label.default,input.default{
+        border-color: ${gray_base};
+        color: ${gray_base};        
+    }    
 
  	input:checked + label:before {
         background: ${brand_color};
@@ -101,6 +111,27 @@
 
     .navbar .navbar-nav>.active>a, .navbar .navbar-nav>.active>a:hover, .navbar .navbar-nav>.active>a:focus{
         color:${brand_color};
+    }
+
+    .form-group .input-group .form-control{
+        border-color: ${gray_base};  
+        color: ${gray_base};
+    }
+
+    .form-group .input-group .input-group-addon{
+        background-color: ${gray_base};
+        border-color:${gray_base};
+    }
+
+    .form-group .input-group.input-group-primary .form-control{
+        border-color: ${brand_color};  
+        color: ${brand_color};
+    }
+
+    .form-group .input-group.input-group-primary .input-group-addon{
+        background-color: ${brand_color};
+        border-color: ${brand_color};
+        color: ${brand_color_text};       
     }
 
 </style>
