@@ -42,18 +42,18 @@ h2 {
     margin: 0;
 
     + * {
-        margin-top: 20px;
+        margin-top: $grid-gutter-width;
     }
 }
 
 h3 {
     color: $darkGray;
-    margin: 0 0 20px 0;
+    margin: 0 0 $grid-gutter-width 0;
 }
 
 h4 {
     color: $darkGray;
-    margin: 0 0 10px 0;
+    margin: 0 0 ceil(($grid-gutter-width / 2)) 0;
 }
 
 p {
@@ -80,7 +80,7 @@ input {
     line-height: 24px;
     font-size: 16px;
     padding: 8px 10px;
-    margin-bottom: 20px;
+    margin-bottom: $grid-gutter-width;
 
     &[type="text"], &[type="number"], &[type="email"], &[type="password"] {
         &[disabled], .disabled {
@@ -96,7 +96,7 @@ input {
         + label {
             clear: left;
             float: left;
-            margin-bottom: 20px;
+            margin-bottom: $grid-gutter-width;
             padding-left: 25px;
             width: auto;
             position: relative;
@@ -218,7 +218,7 @@ input {
 
 /** INPUT GROUPS **/
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: $grid-gutter-width;
 
     .input-group {
         .input-group-addon {
@@ -344,7 +344,7 @@ input {
 /** TABLES **/
 
 table {
-    margin-bottom: 20px;
+    margin-bottom: $grid-gutter-width;
     max-width: 100%;
     width: 100%;
 
@@ -360,7 +360,7 @@ table {
         td, th {
             border-top: 1px solid #ddd;
             line-height: 24px;
-            padding: 10px;
+            padding: ceil(($grid-gutter-width / 2));
             vertical-align: top;
         }
     }
@@ -381,7 +381,7 @@ dl {
     background: #fff;
 
     .show-menu {
-        padding: 20px;
+        padding: $grid-gutter-width;
         background: 0;
         border: 0;
         width: 23px;
@@ -396,8 +396,8 @@ dl {
             background: $mainColor;
             display: block;
             position: absolute;
-            top: 20px;
-            left: 20px;
+            top: $grid-gutter-width;
+            left: $grid-gutter-width;
             transition: .25s ease-in-out;
 
             &:nth-child(3), &:nth-child(4) {
@@ -535,7 +535,7 @@ dl {
         backgrOund: $mainColor;
         display: flex;
         align-items: center;
-        padding: 20px;
+        padding: $grid-gutter-width;
 
         .heading-user {
             align-items: center;
@@ -553,8 +553,8 @@ dl {
 
             .heading-user-name {
                 color: $lightGray;
-                font-size: 18px;
-                padding-left: 20px;
+                font-size: ceil(($font-size-base * 1.125));
+                padding-left: $grid-gutter-width;
                 float: left;
                 width: calc(100% - 70px);
             }
@@ -571,7 +571,7 @@ dl {
     nav {
         > ul {
             margin: 0;
-            padding: 10px 20PX;
+            padding: ceil(($grid-gutter-width / 2)) $grid-gutter-width;
             border-top: 2px solid #fff;
             list-style: none;
 
@@ -580,9 +580,9 @@ dl {
                 width: 100%;
 
                 a {
-                    padding: 10px 0;
+                    padding: ceil(($grid-gutter-width / 2)) 0;
                     color: $lightGray;
-                    font-size: 18px;
+                    font-size: ceil(($font-size-base * 1.125));
                     float: left;
                     width: 100%;
 
