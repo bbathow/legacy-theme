@@ -43,6 +43,17 @@ $input-color-placeholder:				#aaaaaa;
 $navbar-default-bg: 					transparent;
 $navbar-default-border: 				transparent;
 $navbar-default-link-color:				$brand-primary;
+
+/** Modals **/
+$modal-inner-padding:					$grid-gutter-width;
+$modal-title-padding:					$grid-gutter-width;
+$modal-content-border-color:			transparent;
+$modal-backdrop-opacity:				.3;
+$modal-header-border-color:				$gray-light;
+$modal-footer-border-color: 			$modal-header-border-color;
+
+
+
 /** **/
 $mainColor : 							$brand-primary;
 $lightGray : 							$gray-light;

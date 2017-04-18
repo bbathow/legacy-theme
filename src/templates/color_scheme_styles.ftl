@@ -60,7 +60,11 @@
     .btn.btn-default{
         border-color: ${gray_base};
         color: ${gray_base};
-    }   
+    }
+
+    .btn.btn-link{
+        color: ${brand_color};
+    }         
 
     .btn.btn-primary{ 
         background-color: ${brand_color};
@@ -92,6 +96,11 @@
     }    
 
     /** PORTLETS **/
+    .portlet-topper-toolbar>a, .portlet-topper-toolbar>span>a, .portlet-topper-toolbar .lfr-icon-menu>a{
+        color:${brand_color};
+    }
+
+
     #breadcrumbs .breadcrumb li + li:before,#breadcrumbs .breadcrumb li a{
         color:${gray_base};
     }
@@ -132,6 +141,10 @@
         background-color: ${brand_color};
         border-color: ${brand_color};
         color: ${brand_color_text};       
+    }
+
+    .modal-header .close, .modal-header .modal-primary-action-button{
+        color: ${brand_color};
     }
 
 </style>

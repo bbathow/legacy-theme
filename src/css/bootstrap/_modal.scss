@@ -1,0 +1,41 @@
+.modal-header {
+	.close,.modal-primary-action-button{
+		color:$brand-primary;
+
+		.lexicon-icon{
+			opacity:1;
+		}
+	}
+}
+
+.modal-dialog{
+	position:absolute;
+	width:100%;
+}
+
+.modal-content{
+	border-radius:0;
+	-webkit-border-radius:0;
+	box-shadow:0px 1px 1px 1px #888;
+	-webkit-box-shadow:0px 1px 1px 1px #888;
+}
+
+@media(min-width:$screen-sm){
+
+	.modal-dialog{
+		position:relative;
+
+		&.modal-full-screen{
+			position:absolute;
+		}
+	}
+
+	.modal-header,.modal-footer{
+		background:#ffffff;
+
+		*{
+			color:$brand-primary;
+		}		
+	}
+
+}	

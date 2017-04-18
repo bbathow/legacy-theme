@@ -276,16 +276,23 @@ input {
 .btn {
     border-radius: 0;
     -webkit-border-radius: 0;
-    font-size: 18px;
-    margin-left: 15px;
-    padding: 10px 15px;
+    font-size: ceil(($font-size-base * 1.125));
+    padding: ceil(($grid-gutter-width / 2)) $grid-gutter-width;
     min-width: 100px;
-    line-height: 25px;
+    line-height: $headings-line-height;
     
+    + .btn{
+        margin-left: $grid-gutter-width;
+    }
+
     &.btn-default {
         background-color: $secondaryButtonBackground;
         border-color: $secondaryButtonBorder;
         color: $darkGray;
+    }
+
+    &.btn-link {
+        color: $mainColor;
     }
 
     &.btn-primary {
@@ -299,7 +306,7 @@ input {
     .portlet {
         float: left;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: $grid-gutter-width;
 
         .portlet-title-text {
             margin-bottom: 0;
