@@ -6,7 +6,15 @@
 				[
 					{
 						"portletId": "com_liferay_login_web_portlet_LoginPortlet"
-					}
+					},
+                    {
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "CARD-LIST-2-COLUMNS",
+                            "groupId": "${groupId}",
+                            "portletSetupShowBorders": "false"
+                        }
+                    },					
 				],
 				[
 					{

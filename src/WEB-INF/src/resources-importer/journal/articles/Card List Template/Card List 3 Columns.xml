@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<root available-locales="es_ES" default-locale="es_ES">
+	<dynamic-element name="ColumnsNumberLG" type="list" index-type="keyword" instance-id="asam">
+		<dynamic-content language-id="es_ES"><![CDATA[4]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="ColumnsNumberMD" type="list" index-type="keyword" instance-id="rebl">
+		<dynamic-content language-id="es_ES"><![CDATA[4]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="ColumnsNumberSM" type="list" index-type="keyword" instance-id="ognq">
+		<dynamic-content language-id="es_ES"><![CDATA[6]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="ColumnsNumberXS" type="list" index-type="keyword" instance-id="vwyq">
+		<dynamic-content language-id="es_ES"><![CDATA[12]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="card" type="selection_break" index-type="keyword" instance-id="rbbd">
+		<dynamic-element name="image" instance-id="ewky" type="image" index-type="keyword">
+			<dynamic-element name="alt" instance-id="lymh" type="text" index-type="keyword">
+				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="header" instance-id="kssd" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[Titulo 1]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="description" instance-id="rsyn" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="ShowMore" instance-id="wixs" type="text" index-type="keyword">
+			<dynamic-element name="link" instance-id="perv" type="text" index-type="keyword">
+				<dynamic-element name="title" instance-id="zdif" type="text" index-type="keyword">
+					<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
+				</dynamic-element>
+				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content language-id="es_ES"><![CDATA[Read more]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element name="card" type="selection_break" index-type="keyword" instance-id="dqnp">
+		<dynamic-element name="image" instance-id="pmma" type="image" index-type="keyword">
+			<dynamic-element name="alt" instance-id="mlka" type="text" index-type="keyword">
+				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="header" instance-id="efml" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[Titulo 2]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="description" instance-id="fewh" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="ShowMore" instance-id="miwe" type="text" index-type="keyword">
+			<dynamic-element name="link" instance-id="tbsa" type="text" index-type="keyword">
+				<dynamic-element name="title" instance-id="wwdz" type="text" index-type="keyword">
+					<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
+				</dynamic-element>
+				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content language-id="es_ES"><![CDATA[Read more]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+	<dynamic-element name="card" type="selection_break" index-type="keyword" instance-id="ptda">
+		<dynamic-element name="image" instance-id="rxqt" type="image" index-type="keyword">
+			<dynamic-element name="alt" instance-id="tzqx" type="text" index-type="keyword">
+				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="header" instance-id="chjr" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[Titulo 3]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="description" instance-id="jkij" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="ShowMore" instance-id="lste" type="text" index-type="keyword">
+			<dynamic-element name="link" instance-id="qdbv" type="text" index-type="keyword">
+				<dynamic-element name="title" instance-id="ktlg" type="text" index-type="keyword">
+					<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
+				</dynamic-element>
+				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
+			</dynamic-element>
+			<dynamic-content language-id="es_ES"><![CDATA[Read more]]></dynamic-content>
+		</dynamic-element>
+	</dynamic-element>
+</root>
