@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<root available-locales="es_ES" default-locale="es_ES">
+	<dynamic-element name="content" type="text_area" index-type="keyword" instance-id="kjgu">
+		<dynamic-content language-id="es_ES"><![CDATA[
+
+			<h2>Portlet Decorators</h2>
+			<p>Legacy Theme provide several portlet decorators to make easy portlet customizations.</p>
+
+			<h3>Barebone</h3>
+			<p>Portlets will show without portlet title.</p>	
+
+			<h3>Without Padding</h3>
+			<p>Portlet will show without portlet title and padding of portlet content is setted to 0px.</p>
+
+			<h3>Full Width</h3>
+			<p>Portlet will show without portlet title, padding of portlet content is setted to 0px and portlet fill the window fromt left to right</p>	
+
+		]]></dynamic-content>
+	</dynamic-element>
+</root>

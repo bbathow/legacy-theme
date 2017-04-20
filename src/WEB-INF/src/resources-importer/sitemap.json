@@ -1,30 +1,100 @@
 {
-	"layoutTemplateId": "2_columns_ii",
-	"privatePages": [
+	"layoutTemplateId": "1_column",
+	"publicPages": [
 		{
-			"columns": [
-				[
-					{
-						"portletId": "com_liferay_login_web_portlet_LoginPortlet"
-					},
-                    {
-                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
-                        "portletPreferences": {
-                            "articleId": "CARD-LIST-2-COLUMNS",
-                            "groupId": "${groupId}",
-                            "portletSetupShowBorders": "false"
-                        }
-                    },					
-				],
-				[
-					{
-						"portletId": "com_liferay_hello_world_web_portlet_HelloWorldPortlet"
-					}
-				]
-			],
-			"friendlyURL": "/home",
-			"name": "Welcome",
-			"title": "Welcome"
-		}
-	]
+			"columns": [],
+			"friendlyURL": "/templates",
+			"name": "tenmplates",
+			"title": "Templates",
+			"layouts": [
+                {
+					"friendlyURL": "/card-list",
+					"name": "CardList",
+					"title": "Card List",
+					"columns": [
+						[
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "CARD-LIST-PAGE-TITLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "barebone"
+		                        }
+		                    },	
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "CARD-LIST-6-COLUMNS",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "nopadding"
+		                        }
+		                    },	                    				
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "CARD-LIST-4-COLUMNS",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "nopadding"
+		                        }
+		                    },
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "CARD-LIST-3-COLUMNS",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "nopadding"
+		                        }
+		                    },
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "CARD-LIST-2-COLUMNS",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "nopadding"
+		                        }
+		                    },	                    	                    					
+						]
+					]                   
+                },
+                {
+                    "friendlyURL": "/card-list-carousel",
+                    "name": "cardListCarousel",
+                    "title": "Card List Carousel",
+					"columns": [
+						[
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "CARD-CAROUSEL-PAGE-TITLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "barebone"
+		                        }
+		                    },
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "CARD-LIST-CAROUSEL-WITH-ARROWS-TITLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "nopadding"
+		                        }
+		                    },
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "CARD-LIST-TOUCH-CAROUSEL-TITLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "nopadding"
+		                        }
+		                    },	    		                        		                    
+		                ]
+		            ]        	                    
+                },                
+                {
+                    "friendlyURL": "/carousel",
+                    "name": "carousel",
+                    "title": "Carousel"
+                }
+            ]			
+		}		
+	]	
 }
