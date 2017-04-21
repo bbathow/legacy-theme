@@ -18,7 +18,7 @@
 			<dynamic-element name="alt" instance-id="xleb" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[[$FILE=monument.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="hslf" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Titulo 1]]></dynamic-content>
@@ -41,7 +41,7 @@
 			<dynamic-element name="alt" instance-id="iyab" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[[$FILE=monument.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="cyqi" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Titulo 2]]></dynamic-content>
@@ -64,7 +64,7 @@
 			<dynamic-element name="alt" instance-id="heae" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[[$FILE=monument.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="wxyl" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Titulo 3]]></dynamic-content>
@@ -87,7 +87,7 @@
 			<dynamic-element name="alt" instance-id="kuho" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[[$FILE=monument.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="irls" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Titulo 4]]></dynamic-content>

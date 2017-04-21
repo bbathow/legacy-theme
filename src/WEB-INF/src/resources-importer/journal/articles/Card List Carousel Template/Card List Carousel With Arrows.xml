@@ -30,7 +30,7 @@
 			<dynamic-element name="alt" instance-id="cmqf" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[[$FILE=monument.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="ahja" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Titulo 1]]></dynamic-content>
@@ -53,7 +53,7 @@
 			<dynamic-element name="alt" instance-id="cpqy" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[[$FILE=monument.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="xexl" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Titulo 2]]></dynamic-content>
@@ -76,7 +76,7 @@
 			<dynamic-element name="alt" instance-id="olrf" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[[$FILE=monument.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="bejk" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Titulo 3]]></dynamic-content>
@@ -99,7 +99,7 @@
 			<dynamic-element name="alt" instance-id="hucq" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[[$FILE=monument.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="nzkd" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Titulo 4]]></dynamic-content>
@@ -122,7 +122,7 @@
 			<dynamic-element name="alt" instance-id="cvpx" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[[$FILE=monument.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="awyp" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Titulo 6]]></dynamic-content>
@@ -145,7 +145,7 @@
 			<dynamic-element name="alt" instance-id="hxwc" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[/documents/20147/0/monument.jpg/9647fb20-9306-7113-b144-f77147422f01?t=1490993054453]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[[$FILE=monument.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="cshw" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Titulo 5]]></dynamic-content>

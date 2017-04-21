@@ -4,12 +4,12 @@
 		{
 			"columns": [],
 			"friendlyURL": "/templates",
-			"name": "tenmplates",
+			"name": "Templates",
 			"title": "Templates",
 			"layouts": [
                 {
 					"friendlyURL": "/card-list",
-					"name": "CardList",
+					"name": "Card List",
 					"title": "Card List",
 					"columns": [
 						[
@@ -58,7 +58,7 @@
                 },
                 {
                     "friendlyURL": "/card-list-carousel",
-                    "name": "cardListCarousel",
+                    "name": "Card List Carousel",
                     "title": "Card List Carousel",
 					"columns": [
 						[
@@ -91,10 +91,24 @@
                 },                
                 {
                     "friendlyURL": "/carousel",
-                    "name": "carousel",
+                    "name": "Carousel",
                     "title": "Carousel"
                 }
             ]			
-		}		
+		},
+		{
+			"columns": [],
+			"friendlyURL": "/footer",
+			"name": "Footer",
+			"title": "Footer",
+			"hidden": "true",
+			"layouts": [
+                {
+                    "name": "Home",
+                    "type": "link_to_layout",
+                    "url": "/Home"
+                }              				
+			]
+		}					
 	]	
 }
