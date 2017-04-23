@@ -24,7 +24,9 @@
 	display: none;
 }
 
-.modal-open .modal {
+
+
+.modal.in {
     display: block;
     margin: 0;
     overflow: hidden;

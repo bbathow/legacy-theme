@@ -12,7 +12,7 @@
 
     $(document).ready(function(){
         
-        $(".card-list-carousel-template").owlCarousel({
+        $("#card-list-carousel-template-${randomNamespace}").owlCarousel({
             navigation : ${nav},
             navigationText:['<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>','<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>'],
             slideSpeed : 300,
@@ -33,7 +33,7 @@
     <#assign hasNavigationClass = 'hasNavigation' />
 </#if>
 
-<div class="card-list-carousel-template ${hasNavigationClass}">
+<div id="card-list-carousel-template-${randomNamespace}" class="card-list-carousel-template ${hasNavigationClass}">
     
     <#list card.getSiblings() as item>
 

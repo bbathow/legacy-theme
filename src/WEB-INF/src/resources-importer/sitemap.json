@@ -92,7 +92,51 @@
                 {
                     "friendlyURL": "/carousel",
                     "name": "Carousel",
-                    "title": "Carousel"
+                    "title": "Carousel",
+					"columns": [
+						[
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "CAROUSEL-PAGE-TITLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "barebone"
+		                        }
+		                    },
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "FULL-WIDTH-GALLERY-TITLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "barebone"
+		                        }
+		                    },	
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "IMAGE-CAROUSEL",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "fullwidth"
+		                        }
+		                    },	
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "GALLERY-TITLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "barebone"
+		                        }
+		                    },
+							{
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "IMAGE-CAROUSEL",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "nopadding"
+		                        }
+		                    }		                    			                    		                    	                    
+		                ]
+		           	]                             
                 }
             ]			
 		},

@@ -2,7 +2,7 @@
 
     $(document).ready(function(){
         
-        $(".carousel-template").owlCarousel({
+        $("#carousel-template-${randomNamespace}").owlCarousel({
           navigation : true,
           navigationText:['<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>','<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>'],
           slideSpeed : 300,
@@ -15,7 +15,7 @@
 
 </script>
 
-<div class="carousel-template">
+<div id="carousel-template-${randomNamespace}" class="carousel-template">
     <#list items.getSiblings() as item>
         <div class="item">
           <a href="${item.link.getData()}" title="${item.link.title.getData()}">

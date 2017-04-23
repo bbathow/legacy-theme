@@ -299,6 +299,11 @@ input {
         background-color: $mainColor;
         border-color: $mainColor;
     }
+
+    &.close{
+        min-width:0;
+        background:0;
+    }
 }
 
 /** PORTLETS **/

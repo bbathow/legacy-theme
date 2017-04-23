@@ -8,9 +8,16 @@
 	}
 }
 
+.modal{
+	display:none;
+}
+
+.modal.modal-focused{
+	display:block;
+}
+
 .modal-dialog{
 	position:absolute;
-	width:100%;
 }
 
 .modal-content{
@@ -38,4 +45,4 @@
 		}		
 	}
 
-}	
+}

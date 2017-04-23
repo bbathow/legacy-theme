@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<root available-locales="es_ES" default-locale="es_ES">
+	<dynamic-element name="content" type="text_area" index-type="keyword" instance-id="frlc">
+		<dynamic-content language-id="es_ES"><![CDATA[<div class="journal-content-article">
+	<h2>Image Gallery</h2>
+	<p>This is a responsive image carousel where you can add all images you want to the carousel and custon their fields</p>
+	
+	<h3>Template Custom Fields</h3>
+	<h4>Image Fields</h4>
+	<div class="row">
+	<div class="col-md-3 col-sm-4 col-xs-12">
+		<div class="card card-horizontal">
+			<div class="card-row card-row-padded">
+				<div class="card-col-field"><span class="icon-picture sticker sticker-default sticker-static sticker-lg"></span></div>
+				<div class="card-col-content card-col-gutters"><span>Image</span></div> </div> </div> </div>
+
+				<div class="col-md-3 col-sm-4 col-xs-12"> <div class="card card-horizontal"> <div class="card-row card-row-padded"> <div class="card-col-field"><span class="icon-picture sticker sticker-default sticker-static sticker-lg"></span></div> <div class="card-col-content card-col-gutters"><span>Image Alt</span></div> </div> </div> </div>
+
+
+				<div class="col-md-3 col-sm-4 col-xs-12"> <div class="card card-horizontal"> <div class="card-row card-row-padded"> <div class="card-col-field"><span class="icon-link sticker sticker-default sticker-static sticker-lg"></span></div> <div class="card-col-content card-col-gutters"><span>Link</span></div> </div> </div> </div>
+
+				<div class="col-md-3 col-sm-4 col-xs-12"> <div class="card card-horizontal"> <div class="card-row card-row-padded"> <div class="card-col-field"><span class="icon-link sticker sticker-default sticker-static sticker-lg"></span></div> <div class="card-col-content card-col-gutters"><span>Link Title</span></div> </div> </div> </div> </div> </div>]]></dynamic-content>
+	</dynamic-element>
+</root>
+
