@@ -3,6 +3,127 @@
 	"publicPages": [
 		{
 			"columns": [],
+			"friendlyURL": "/Home",
+			"name": "Home",
+			"title": "Home"
+		},
+		{
+			"columns": [],
+			"friendlyURL": "/the-company",
+			"name": "The Company",
+			"title": "The Company"
+		},
+		{
+			"columns": [],
+			"friendlyURL": "/products",
+			"name": "Products",
+			"title": "Products"
+		},
+		{
+			"columns": [],
+			"friendlyURL": "/blog",
+			"name": "Blog",
+			"title": "Blog"
+		},
+		{
+			"columns": [],
+			"friendlyURL": "/html-elements",
+			"name": "HTML Elements",
+			"title": "HTML Elements",
+			"layouts": [
+                {
+					"friendlyURL": "/typography",
+					"name": "Typography",
+					"title": "Typography",
+					"columns": [
+						[
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "HEADERS-SAMPLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "barebone"
+		                        }
+		                    },
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "PARAGRAPH-SAMPLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "barebone"
+		                        }
+		                    }                
+		                ]    	
+					]
+				},
+                {
+					"friendlyURL": "/lists",
+					"name": "Lists",
+					"title": "Lists",
+					"columns": []
+				},					
+                {
+					"friendlyURL": "/tables",
+					"name": "Tables",
+					"title": "Tables",
+					"columns": [
+						[
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "TABLES-SAMPLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "barebone"
+		                        }
+		                    }
+		                ]    
+					]
+				},	
+                {
+					"friendlyURL": "/forms",
+					"name": "Forms",
+					"title": "Forms",
+					"columns": [
+						[
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "FORM-SAMPLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "barebone"
+		                        }
+		                    }
+		                ]    
+					]
+				},									
+                {
+					"friendlyURL": "/buttons",
+					"name": "Buttons",
+					"title": "Buttons",
+					"columns": [
+						[
+		                    {
+		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "BUTTONS-SAMPLE",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "barebone"
+		                        }
+		                    }
+		                ]    
+					]
+				},
+                {
+					"friendlyURL": "/modals",
+					"name": "Modals",
+					"title": "Modals",
+					"columns": []
+				}
+
+			]					
+		},										
+		{
+			"columns": [],
 			"friendlyURL": "/templates",
 			"name": "Templates",
 			"title": "Templates",
@@ -52,7 +173,7 @@
 		                            "groupId": "${groupId}",
 		                            "portletSetupPortletDecoratorId": "nopadding"
 		                        }
-		                    },	                    	                    					
+		                    }	                    	                    					
 						]
 					]                   
                 },
@@ -85,7 +206,7 @@
 		                            "groupId": "${groupId}",
 		                            "portletSetupPortletDecoratorId": "nopadding"
 		                        }
-		                    },	    		                        		                    
+		                    }	    		                        		                    
 		                ]
 		            ]        	                    
                 },                
@@ -150,8 +271,74 @@
                 {
                     "name": "Home",
                     "type": "link_to_layout",
-                    "url": "/Home"
-                }              				
+                    "layouts": [
+                    ]
+                },
+                {
+                    "name": "The Company",
+                    "type": "link_to_layout",
+                    "layouts": [
+                    	{
+	                    	"name": "Link 1",
+	                    	"type": "link_to_layout"                   	
+                    	},
+                    	{
+	                    	"name": "Link 2",
+	                    	"type": "link_to_layout"                   	
+                    	},
+                    	{
+	                    	"name": "Link 3",
+	                    	"type": "link_to_layout"                   	
+                    	}
+                    ]	              
+                },                  
+                {
+                    "name": "Products",
+                    "type": "link_to_layout",
+                    "layouts": [
+                    	{
+	                    	"name": "Link 1",
+	                    	"type": "link_to_layout"                   	
+                    	},
+                    	{
+	                    	"name": "Link 2",
+	                    	"type": "link_to_layout"                   	
+                    	},
+                    	{
+	                    	"name": "Link 3",
+	                    	"type": "link_to_layout"                   	
+                    	},
+                    	{
+	                    	"name": "Link 4",
+	                    	"type": "link_to_layout"                   	
+                    	}                     	                    	
+                    ]
+                },
+                {
+                    "name": "Blog",
+                    "type": "link_to_layout"
+                },  
+                {
+                	"title":"Accesibility",	
+                    "name": "Accesibility",
+                    "type": "link_to_layout",
+                    "friendlyURL": "/accesibility",
+                    "columns": []
+                },
+                {
+                	"title":"Sitemap",
+                    "name": "Sitemap",
+                    "type": "link_to_layout",
+                    "friendlyURL": "/sitemap",
+                    "columns": []
+                },
+                {
+                	"title":"Contact Us",
+                    "name": "Contact Us",
+                    "type": "link_to_layout",
+                    "friendlyURL": "/contact-us",
+                    "columns": []
+                }                                                                                                   				
 			]
 		}					
 	]	
