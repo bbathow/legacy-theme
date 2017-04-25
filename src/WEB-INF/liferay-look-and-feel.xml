@@ -262,7 +262,28 @@
  
                     ]]>	
 			
-			</setting>						
+			</setting>
+
+            <setting configurable="true" key="Footer-Links" type="text" value="/footer"/>
+
+            <setting configurable="true" key="Show-Facebook-Link" type="checkbox" value="true"/>
+            <setting configurable="true" key="Facebook-Link" type="text" value="http://www.facebook.com"/>
+            
+            <setting configurable="true" key="Show-Twitter-Link" type="checkbox" value="true"/>
+            <setting configurable="true" key="Twitter-Link" type="text" value="http://www.twitter.com"/>
+            
+            <setting configurable="true" key="Show-Instagram-Link" type="checkbox" value="true"/>
+            <setting configurable="true" key="Instagram-Link" type="text" value="http://www.instagram.com"/>
+            
+            <setting configurable="true" key="Show-Linkedin-Link" type="checkbox" value="true"/>
+            <setting configurable="true" key="Linkedin-Link" type="text" value="http://www.linkedin.com"/>
+            
+            <setting configurable="true" key="Show-Youtube-Link" type="checkbox" value="true"/>
+            <setting configurable="true" key="Youtube-Link" type="text" value="http://www.youtube.com"/>
+            
+            <setting configurable="true" key="Show-Google-Plus-Link" type="checkbox" value="true"/>
+            <setting configurable="true" key="Google-Plus-Link" type="text" value="https://plus.google.com"/>
+
  		</settings>	                                                                                                            
 	</theme>
 </look-and-feel>

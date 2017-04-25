@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<root available-locales="es_ES" default-locale="es_ES">
+	<dynamic-element name="content" type="text_area" index-type="keyword" instance-id="uiou">
+		<dynamic-content language-id="es_ES"><![CDATA[
+
+			<h1>Charts</h1>
+			<p>We use ECharts Javascript Library for Charts Generation. </p>
+	
+		]]></dynamic-content>
+	</dynamic-element>
+</root>

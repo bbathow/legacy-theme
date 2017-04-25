@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <root available-locales="es_ES" default-locale="es_ES">
-	<dynamic-element name="content" type="text_area" index-type="keyword" instance-id="frlc">
+	<dynamic-element name="content" type="text_area" index-type="keyword" instance-id="7yjm">
 		<dynamic-content language-id="es_ES"><![CDATA[<div class="journal-content-article">
 	<h2>Image Gallery</h2>
 	<p>This is a responsive image carousel where you can add all images you want to the carousel and custon their fields</p>

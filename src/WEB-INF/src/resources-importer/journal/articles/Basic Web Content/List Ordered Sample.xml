@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<root available-locales="es_ES" default-locale="es_ES">
+	<dynamic-element name="content" type="text_area" index-type="keyword" instance-id="jzx3">
+		<dynamic-content language-id="es_ES"><![CDATA[
+
+			<h2>List Ordered</h2>
+			<ol> 
+				<li>Lorem ipsum dolor sit amet</li> 
+				<li>Consectetur adipiscing elit</li> 
+				<li>Integer molestie lorem at massa</li> 
+				<li>Facilisis in pretium nisl aliquet</li> 
+				<li>Nulla volutpat aliquam velit</li>
+				<li>Faucibus porta lacus fringilla vel</li> 
+				<li>Aenean sit amet erat nunc</li> 
+				<li>Eget porttitor lorem</li> 
+			</ol>	
+	
+		]]></dynamic-content>
+	</dynamic-element>
+</root>

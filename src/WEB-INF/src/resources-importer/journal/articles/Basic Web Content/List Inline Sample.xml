@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<root available-locales="es_ES" default-locale="es_ES">
+	<dynamic-element name="content" type="text_area" index-type="keyword" instance-id="y7rd">
+		<dynamic-content language-id="es_ES"><![CDATA[
+
+			<h2>List Inline</h2>
+			<ul class="list-inline"> 
+				<li>Lorem ipsum</li> 
+				<li>Phasellus iaculis</li> 
+				<li>Nulla volutpat</li> 
+			</ul>	
+	
+		]]></dynamic-content>
+	</dynamic-element>
+</root>

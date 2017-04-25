@@ -1,12 +1,16 @@
 <#assign layoutService = serviceLocator.findService("com.liferay.portal.kernel.service.LayoutLocalService") />
-
-<#assign rluuid = layoutService.getFriendlyURLLayout(group_id,false,'/footer') />
-
 <#assign VOID = freeMarkerPortletPreferences.setValue("groupId", '${group_id}') />	
+<#assign VOID = freeMarkerPortletPreferences.setValue("portletSetupPortletDecoratorId", "barebone")>
+<#assign VOID = freeMarkerPortletPreferences.setValue("displayDepth", "2") />
+<#assign Footer_Links = theme_display.getThemeSetting('Footer-Links') />
 
-<#assign VOID = freeMarkerPortletPreferences.setValue("displayDepth", "3") />
+<#if Footer_Links != ''>
+	<#assign rluuid = layoutService.getFriendlyURLLayout(group_id,false,'/footer') />
+</#if>
 
-<#assign VOID = freeMarkerPortletPreferences.setValue("rootLayoutUuid", rluuid.uuid) />
+<#if (rluuid)??>
+	<#assign VOID = freeMarkerPortletPreferences.setValue("rootLayoutUuid", rluuid.uuid) />
+</#if>
 
 <@liferay_portlet["runtime"]
 	defaultPreferences="${freeMarkerPortletPreferences}"
