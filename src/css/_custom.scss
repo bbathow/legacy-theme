@@ -522,6 +522,12 @@ dl {
     margin-left: 0px;
 }
 
+#content{
+    &.container-fluid{
+        padding:0;
+    }
+}
+
 /** ASIDE BAR **/
 
 .aside-bar {

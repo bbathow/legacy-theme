@@ -25,6 +25,16 @@
 
 <#include "${full_templates_path}/color_scheme_styles.ftl" />
 
+<#assign show_breadcrumbs = theme_display.getThemeSetting('Show-Breadcrumbs') />
+<#assign container_type = theme_display.getThemeSetting('Container-Fluid-or-Not-Fluid') />
+
+<#if container_type == 'Container Fluid'>
+	<#assign container_type = 'container-fluid' />
+<#else>
+	<#assign container_type = 'container' />
+</#if>
+
+
 <div class="container-fluid" id="wrapper">
 
 	<a style="display:none;" class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
@@ -55,10 +65,9 @@
 			
 		</header>
 
-		<section id="content">
+		<section id="content" class="${container_type}">
 			<h1 class="hide-accessible">${the_title}</h1>
 			
-			<#assign show_breadcrumbs = theme_display.getThemeSetting('Show-Breadcrumbs') />
 			<#if show_breadcrumbs == 'true'>
 				<nav id="breadcrumbs">
 					<#include "${full_templates_path}/breadcrumbs.ftl" />
