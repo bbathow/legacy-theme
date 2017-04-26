@@ -27,6 +27,9 @@
 
 <#assign show_breadcrumbs = theme_display.getThemeSetting('Show-Breadcrumbs') />
 <#assign container_type = theme_display.getThemeSetting('Container-Fluid-or-Not-Fluid') />
+<#assign header_type = theme_display.getThemeSetting('Header-Type') />
+<#assign header_fluid = theme_display.getThemeSetting('Header-Fluid-or-Not-Fluid') />
+
 
 <#if container_type == 'Container Fluid'>
 	<#assign container_type = 'container-fluid' />
@@ -34,19 +37,26 @@
 	<#assign container_type = 'container' />
 </#if>
 
+<#if header_type == 'Full Width Header'>
+	<#assign container_type = 'type1' />
+<#else>
+	<#assign container_type = 'type2' />
+</#if>
+
+<#if header_fluid == 'Header Fluid'>
+	<#assign header_fluid = 'container-fluid' />
+<#else>
+	<#assign header_fluid = 'container' />
+</#if>
 
 <div class="container-fluid" id="wrapper">
-
-	<a style="display:none;" class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-		<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
-	</a>
 	
 	<#if has_navigation && is_setup_complete>
 		<#include "${full_templates_path}/navigation.ftl" />
 	</#if>
 
 	<div class="wrapper">
-		<header id="banner" role="banner">
+		<header id="banner" role="banner" class="${header_fluid} ${header_type}">
 
 			<section class="header-nav panel">
 			
@@ -57,6 +67,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
+
+				<a style="display:none;" class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
+					<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
+				</a>
 				
 				<div class="search-component">	
 					<#include "${full_templates_path}/search.ftl" />

@@ -9,12 +9,15 @@
 
 			<h3>Barebone</h3>
 			<p>Portlets will show without portlet title.</p>	
+			<img src="" alt=""/>
 
 			<h3>Without Padding</h3>
 			<p>Portlet will show without portlet title and padding of portlet content is setted to 0px.</p>
+			<img src="" alt=""/>
 
 			<h3>Full Width</h3>
-			<p>Portlet will show without portlet title, padding of portlet content is setted to 0px and portlet fill the window fromt left to right</p>	
+			<p>Portlet will show without portlet title, padding of portlet content is setted to 0px and portlet fill the window from left to right.</p>	
+			<img src="" alt=""/>
 
 		]]></dynamic-content>
 	</dynamic-element>

@@ -26,6 +26,31 @@
 			"title": "Blog"
 		},
 		{
+			"friendlyURL": "/theme-settings-portlet-decorators",
+			"name": "Theme Settings & Portlet Decorators",
+			"title": "Theme Setting & Portlet Decorators",
+			"columns": [
+				[
+					{
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "THEME-SETTINGS",
+                            "groupId": "${groupId}",
+                            "portletSetupPortletDecoratorId": "barebone"
+                        }
+                    },
+					{
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "PORTLET DECORATORS",
+                            "groupId": "${groupId}",
+                            "portletSetupPortletDecoratorId": "barebone"
+                        }
+                    },                    
+				]
+			],			
+		},		
+		{
 			"columns": [],
 			"friendlyURL": "/html-elements",
 			"name": "HTML Elements",

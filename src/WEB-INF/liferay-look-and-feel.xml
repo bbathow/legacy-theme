@@ -26,7 +26,11 @@
 
 		<settings>
 			<setting configurable="true" key="Show-Breadcrumbs" type="checkbox" value="false"/>
-			
+
+            <setting configurable="true" key="Header-Fluid-or-Not-Fluid" type="select" options="Header Fluid, Header Not Fluid" value="Header Fluid"/>
+
+            <setting configurable="true" key="Header-Type" type="select" options="Full Width Header, Box Header" value="Full Width Header"/>
+
             <setting configurable="true" key="Container-Fluid-or-Not-Fluid" type="select" options="Container Fluid, Container Not Fluid" value="Container Fluid"/>
 
 			<setting configurable="true" key="Brand-Color" type="text" value="#1d628b">

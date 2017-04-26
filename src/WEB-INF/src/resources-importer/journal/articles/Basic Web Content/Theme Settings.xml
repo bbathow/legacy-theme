@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+
+<root available-locales="es_ES" default-locale="es_ES">
+	<dynamic-element name="content" type="text_area" index-type="keyword" instance-id="53gf">
+		<dynamic-content language-id="es_ES"><![CDATA[
+
+			<h1>Theme Settings & Portlet Decorators</h1>
+			<h2>Theme Settings</h2>
+			<p>Legacy theme provide several theme setting that allow you to custom your site.</p>
+			<p>Bellow, you can see the different customizable options:</p>
+
+			<h2>Color Schemes</h2>
+			<p>There are no limited Color Schemes. This theme provide many colorpikers which you can use to custom many colors:</p>
+			<table>
+				<tbody>	
+					<tr>
+						<th>Setting</th>
+						<th>Description</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Configurable</th>	
+					</tr>					
+					<tr>
+						<td>Brand Color</td>	
+						<td>Main color of the site. It is used for color letter of many elements and brackgrounds.</td>	
+						<td>Text - ColorPicker</td>	
+						<td>#1d628b</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Brand Color Text</td>	
+						<td>When an element has Brand Color as background, it letter color will be this.</td>	
+						<td>Text - ColorPicker</td>	
+						<td>#ffffff</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Gray-Base</td>	
+						<td>The main color for most elements of the site. For example, it is used for letter color body, many headers and others elements.</td>	
+						<td>Text - ColorPicker</td>	
+						<td>#444444</td>	
+						<td>Yes</td>	
+					</tr>
+				</tbody>
+			</table>
+
+			<h2>Breadcrumbs</h2>	
+			<p>You can choose if Breadcrumbs will show or not in your site, even you can choose it per page.</p>
+			<table>
+				<tbody>	
+					<tr>
+						<th>Setting</th>
+						<th>Description</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Configurable</th>	
+					</tr>					
+					<tr>
+						<td>Show Breadcrumbs</td>	
+						<td>Show breadcryumbs or not</td>	
+						<td>Checkbox</td>	
+						<td>false</td>	
+						<td>Yes</td>	
+					</tr>
+				</tbody>
+			</table>	
+								
+			<h2>Header</h2>	
+			<p>You can choose between 2 types of header</p>
+
+			<h3>Type 1</h3>
+			<img src="" alt=""/>
+
+			<h3>Type 2</h3>
+			<img src="" alt=""/>
+
+			<p>Also, you can choose if you want that your header fill all the window width or just use a container. This settings correspond with bootstrap class, container and container-fluid applied to the header.</p>
+
+			<table>
+				<tbody>	
+					<tr>
+						<th>Setting</th>
+						<th>Description</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Configurable</th>	
+					</tr>					
+					<tr>
+						<td>Header Type</td>	
+						<td>Choose between 2 types of header</td>	
+						<td>Select</td>	
+						<td>Full Width Header</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Header Fluid or Not Fluid</td>	
+						<td>Choose between a container fluid or container for your header</td>	
+						<td>Select</td>	
+						<td>Header Fluid</td>	
+						<td>Yes</td>	
+					</tr>					
+				</tbody>
+			</table>
+
+			<h2>Container</h2>	
+			<p>You can choose if you want that your content fill all the window width or just use a container. This settings correspond with bootstrap class, container and container-fluid applied to the content.</p>
+			<table>
+				<tbody>	
+					<tr>
+						<th>Setting</th>
+						<th>Description</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Configurable</th>	
+					</tr>					
+					<tr>
+						<td>Container Fluid or Not Fluid</td>	
+						<td>Choose between a container fluid or container for your content</td>		
+						<td>Select</td>	
+						<td>Container Fluid</td>	
+						<td>Yes</td>	
+					</tr>					
+				</tbody>
+			</table>			
+
+			<h2>Footer Links</h2>
+
+			<p>First, you can choose the pages you want to show in the footer. You just have to type the parent URL of the links, for example: /footer .</p>
+
+			<h3>Social Networks</h3>
+			<p>Legacy Theme define 6 social networks: Facebook, Twitter, Linkedin, Youtube, Instagram and Google Plus.</p>
+			<p>You can choose which social network have to show and which not. Also, you can type the URLs of each social network, these URLs will be applied to the footer social links.</p>
+			
+			<table>
+				<tbody>	
+					<tr>
+						<th>Setting</th>
+						<th>Description</th>
+						<th>Type</th>
+						<th>Default</th>
+						<th>Configurable</th>	
+					</tr>					
+					<tr>
+						<td>Footer Links</td>	
+						<td>Choose the pages tree that you want tu use as footer links</td>	
+						<td>Text</td>	
+						<td>/footer</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Show Facebook Link</td>	
+						<td>Include facebook link or not</td>	
+						<td>Checkbox</td>	
+						<td>true</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Facebook Link</td>	
+						<td>URL of your facebook profile</td>	
+						<td>Text</td>	
+						<td>http://www.facebook.com</td>	
+						<td>Yes</td>	
+					</tr>	
+					<tr>
+						<td>Show Twitter Link</td>	
+						<td>Include twitter link or not</td>	
+						<td>Checkbox</td>	
+						<td>true</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Twitter Link</td>	
+						<td>URL of your twitter profile</td>	
+						<td>Text</td>	
+						<td>http://www.twitter.com</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Show Instagram Link</td>	
+						<td>Include instagram link or not</td>	
+						<td>Checkbox</td>	
+						<td>true</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Instagram Link</td>	
+						<td>URL of your instagram profile</td>	
+						<td>Text</td>	
+						<td>http://www.instagram.com</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Show Linkedin Link</td>	
+						<td>Include linkedin link or not</td>	
+						<td>Checkbox</td>	
+						<td>true</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Linkedin Link</td>	
+						<td>URL of your linkedin profile</td>	
+						<td>Text</td>	
+						<td>http://www.linkedin.com</td>	
+						<td>Yes</td>	
+					</tr>																																<tr>
+						<td>Show Youtube Link</td>	
+						<td>Include youtube link or not</td>	
+						<td>Checkbox</td>	
+						<td>true</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Youtube Link</td>	
+						<td>URL of your youtube profile</td>	
+						<td>Text</td>	
+						<td>http://www.youtube.com</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Show Google Plus Link</td>	
+						<td>Include google plus link or not</td>	
+						<td>Checkbox</td>	
+						<td>true</td>	
+						<td>Yes</td>	
+					</tr>
+					<tr>
+						<td>Google Plus Link</td>	
+						<td>URL of your google plus profile</td>	
+						<td>Text</td>	
+						<td>https://plus.google.com</td>	
+						<td>Yes</td>	
+					</tr>												
+				</tbody>
+			</table>	
+		]]></dynamic-content>
+	</dynamic-element>
+</root>
