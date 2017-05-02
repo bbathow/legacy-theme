@@ -7,7 +7,7 @@
 			<h2>Modal Full Screen</h2>
 			<p>A modal that stretches to fit the browser window with 45px padding on every side.</p>
 
-			<button class="btn btn-info" data-target="#lexFullScreenModal" data-toggle="modal">Full Screen Modal</button>
+			<button class="btn btn-primary" data-target="#lexFullScreenModal" data-toggle="modal">Full Screen Modal</button>
 
 			<div aria-labelledby="lexLargeModalLabel" class="fade modal" id="lexFullScreenModal" role="dialog" tabindex="-1">
 				<div class="modal-dialog modal-full-screen">

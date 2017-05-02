@@ -7,7 +7,7 @@
 			<h2>Modal large</h2>
 			<p>900px wide modal in window sizes greater than 992px. 600px wide modal in window sizes between 768px and 992px.</p>
 
-			<button class="btn btn-info" data-target="#lexLargeModal" data-toggle="modal">Large Modal</button>
+			<button class="btn btn-primary" data-target="#lexLargeModal" data-toggle="modal">Large Modal</button>
 
 			<div aria-labelledby="lexLargeModalLabel" class="fade modal" id="lexLargeModal" role="dialog" tabindex="-1">
 				<div class="modal-dialog modal-lg">
