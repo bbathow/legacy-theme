@@ -42,13 +42,13 @@
 					{
                         "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
                         "portletPreferences": {
-                            "articleId": "PORTLET DECORATORS",
+                            "articleId": "PORTLET-DECORATORS",
                             "groupId": "${groupId}",
                             "portletSetupPortletDecoratorId": "barebone"
                         }
-                    },                    
+                    }                    
 				]
-			],			
+			]			
 		},		
 		{
 			"columns": [],

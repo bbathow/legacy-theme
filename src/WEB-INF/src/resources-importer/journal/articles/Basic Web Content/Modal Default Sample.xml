@@ -7,7 +7,7 @@
 			<h2>Modal Default</h2>
 			<p>600px wide modal window.</p>
 
-			<button class="btn btn-info" data-target="#lexDefaultModal" data-toggle="modal">Default Modal</button>
+			<button class="btn btn-primary" data-target="#lexDefaultModal" data-toggle="modal">Default Modal</button>
 
 			<div aria-labelledby="lexDefaultModalLabel" class="fade modal" id="lexDefaultModal" role="dialog" tabindex="-1">
 				<div class="modal-dialog">
