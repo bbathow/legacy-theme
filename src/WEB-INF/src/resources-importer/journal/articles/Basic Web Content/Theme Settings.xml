@@ -74,7 +74,7 @@
 			<h3>Type 2</h3>
 			<img src="" alt=""/>
 
-			<p>Also, you can choose if you want that your header fill all the window width or just use a container. This settings correspond with bootstrap class, container and container-fluid applied to the header.</p>
+			<p>Also, you can choose if you want that your header fill all the window width or just use a container. This settings correspond with bootstrap class, <strong>container</strong> and <strong>container-fluid</strong> applied to the header.</p>
 
 			<table>
 				<tbody>	
@@ -103,7 +103,7 @@
 			</table>
 
 			<h2>Container</h2>	
-			<p>You can choose if you want that your content fill all the window width or just use a container. This settings correspond with bootstrap class, container and container-fluid applied to the content.</p>
+			<p>You can choose if you want that your content fill all the window width or just use a container. This settings correspond with Bootstrap 3 classes, container and container-fluid applied to the content.</p>
 			<table>
 				<tbody>	
 					<tr>
@@ -128,7 +128,7 @@
 			<p>First, you can choose the pages you want to show in the footer. You just have to type the parent URL of the links, for example: /footer .</p>
 
 			<h3>Social Networks</h3>
-			<p>Legacy Theme define 6 social networks: Facebook, Twitter, Linkedin, Youtube, Instagram and Google Plus.</p>
+			<p>Legacy Theme define 6 social networks: <strong>Facebook</strong>, <strong>Twitter</strong>, <strong>Linkedin</strong>, <strong>Youtube</strong>, <strong>Instagram</strong> and <strong>Google Plus</strong>.</p>
 			<p>You can choose which social network have to show and which not. Also, you can type the URLs of each social network, these URLs will be applied to the footer social links.</p>
 			
 			<table>

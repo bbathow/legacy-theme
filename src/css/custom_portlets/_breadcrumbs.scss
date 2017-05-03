@@ -17,7 +17,7 @@
 			}
 			
 			+ li:before {
-				color: $darkGray;
+				color: $gray-base;
 				content: "/ ";
 				float: left;
 				font-size: 18px;
@@ -28,7 +28,7 @@
 			a{
 				float:left;
 				font-size:18px;
-				color:$darkGray;
+				color:$gray-base;
 			}
 		
 		}

@@ -1,0 +1,19 @@
+.btn {
+    //font-size: $btn-font-size;
+   //padding: $btn-padding-vertical $btn-padding-horizontal;
+    min-width: 100px;
+    //line-height: $headings-line-height;
+    
+    + .btn{
+        margin-left: $grid-gutter-width;
+    }
+
+    &.btn-link {
+        color: $brand-primary;
+    }
+
+    &.close{
+        min-width:0;
+        background:0;
+    }
+}

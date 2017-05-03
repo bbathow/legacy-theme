@@ -1,0 +1,189 @@
+label {
+    float: left;
+    width: 100%;
+    font-weight: normal;
+
+    &.primary {
+        border-color: $brand-primary;
+        color: $brand-primary;
+    }
+}
+
+input {
+    float: left;
+    width: 100%;
+    line-height: $line-height-base;
+    font-size: $font-size-base;
+    padding: 8px 10px;
+    margin-bottom: $grid-gutter-width;
+
+    &[type="text"], &[type="number"], &[type="email"], &[type="password"] {
+        &[disabled], .disabled {
+            border-color: $gray-light;
+            background: #fff;
+        }
+    }
+
+    &[type="checkbox"], &[type="radio"] {
+        position: absolute;
+        left: -9999px;
+
+        + label {
+            clear: left;
+            float: left;
+            margin-bottom: $grid-gutter-width;
+            padding-left: 25px;
+            width: auto;
+            position: relative;
+            line-height: 22px;
+
+            &:before {
+                width: 20px;
+                height: 20px;
+                border: 1px solid $brand-primary;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 0;
+                content: '';
+                text-align: center;
+            }
+
+            &.big {
+                padding-left: 30px;
+                line-height: 25px;
+
+                &:before {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+
+            &.default {
+                &:before {
+                    border-color: $secondaryColor;
+                }
+            }
+
+            &.light {
+                &:before {
+                    border-color: $gray-light;
+                }
+            }
+        }
+
+        &:checked {
+            + label {
+                &:before {
+                    font-family: Material Icons;
+                    background: $brand-primary;
+                    content: 'check';
+                    color: $colorLetterBackBlue;
+                }
+
+                &.default {
+                    &:before {
+                        background: $secondaryColor;
+                        color: $colorLetterBackBlue;
+                        border-color: $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
+
+    &[type="radio"] {
+        + label {
+            &:before {
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+            }
+        }
+
+        &:checked {
+            + label {
+                &:before {
+                    border: 1px solid $brand-primary;
+                    color: $brand-primary;
+                    content: 'fiber_manual_record';
+                    line-height: 18px;
+                    background: #ffffff;
+                }
+
+                &.default {
+                    &:before {
+                        background: #ffffff;
+                        color: $secondaryColor;
+                    }
+                }
+
+                &.big {
+                    &:before {
+                        font-size: 19px;
+                        line-height: 23px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.primary {
+        border-color: $brand-primary;
+        color: $brand-primary;
+    }
+}
+
+::-webkit-input-placeholder {
+    font-size: ceil(($font-size-base * 1.125));
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: ceil(($font-size-base * 1.125));
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: ceil(($font-size-base * 1.125));
+}
+
+:-ms-input-placeholder {
+    font-size: ceil(($font-size-base * 1.125));
+}
+
+/** INPUT GROUPS **/
+.form-group {
+    margin-bottom: $grid-gutter-width;
+
+    .input-group {
+        .input-group-addon {
+            color: #ffffff;
+            padding: 8px 10px;
+            line-height: $line-height-base;
+            font-size: $font-size-base;
+            min-width: 42px;
+        }
+
+        .form-control {
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            border: 1px solid $gray-dark;
+            line-height: $line-height-base;
+            font-size: $font-size-base;
+            padding: 8px 10px;
+            height: auto;
+        }
+
+        &.input-group-primary {
+            .input-group-addon {
+                background-color: $brand-primary;
+                border-color: $brand-primary;
+            }
+
+            .form-control {
+                border-color: $brand-primary;
+                color: $brand-primary;
+            }
+        }
+    }
+}

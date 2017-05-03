@@ -6,11 +6,10 @@ $icon-font-path: 						"aui/lexicon/fonts/";
 
 
 // CUSTOM VARIABLES
-
+/** Grid System **/
 $grid-gutter-width: 					20px;
 
 /** Colors **/
-
 $gray-base: 							#444444;
 $gray-darker:							#444444;
 $gray-dark:								#444444;
@@ -35,9 +34,10 @@ $font-size-h6: 							ceil(($font-size-base * 0.75));
 $line-height-base: 						1.5;
 $headings-line-height: 					1.625;
 
-
-/** Forms **/
-$input-color-placeholder:				#aaaaaa;
+/** Components **/
+$border-radius-base: 					0;
+$border-radius-large:					0;
+$border-radius-small:					0;
 
 /** Navbar **/
 $navbar-default-bg: 					transparent;
@@ -52,34 +52,76 @@ $modal-backdrop-opacity:				.3;
 $modal-header-border-color:				$gray-light;
 $modal-footer-border-color: 			$modal-header-border-color;
 
+/** Forms **/
+$input-bg: 								#ffffff;
+$input-bg-disabled: 					$input-bg;
+$input-color:							$gray-base;
+$input-border: 							$gray-base;
+$input-border-focus: 					$brand-primary;
+$form-group-margin-bottom:				0;
+$legend-border-color:					$gray-light;
+$input-group-addon-bg:					$gray-base;
+$input-group-addon-border-color: 		$gray-base;
+$input-color-placeholder:				#aaaaaa;
 
+/** Buttons **/
+$btn-default-color:						$gray-base;
+$btn-default-bg:						#ffffff; 
+$btn-default-border:					$gray-base;
+$btn-primary-color:						#ffffff;
+$btn-primary-bg: 						$brand-primary;
+$btn-primary-border: 					$brand-primary;	
+$btn-font-size: 						ceil(($font-size-base * 1.125));
+$btn-padding-vertical:					ceil(($grid-gutter-width / 2)); 
+$btn-padding-horizontal:				$grid-gutter-width;			
+$btn-line-height:						$headings-line-height;
 
 /** **/
-$mainColor : 							$brand-primary;
-$lightGray : 							$gray-light;
-$darkGray : 							$gray-base;
-$secondaryColor : 						$gray-base;
-$bodyColor : 							$body-bg;
-$colorPlaceHolder : 					$input-color-placeholder;
-$colorLetterBackBlue : 					#ffffff;
-$backgroundPortlet : 					#ffffff;
-$secondaryButtonBackground : 			#ffffff;
-$secondaryButtonBorder : 				$secondaryColor;
+$secondaryColor: 						$gray-base;
+$colorLetterBackBlue: 					$btn-primary-color;
+$backgroundPortlet: 					#ffffff;
 
 
-
+/** Cards **/
 $card-gutter-width: 					ceil($grid-gutter-width / 2);
 $card-margin-bottom: 					$grid-gutter-width;
 
+
+/** Panel **/
 $panel-heading-padding:					$grid-gutter-width $grid-gutter-width ceil($grid-gutter-width / 2);
 $panel-default-heading-bg: 				#ffffff;
 $panel-body-padding:					0 $grid-gutter-width $grid-gutter-width;
 $panel-footer-bg: 						#ffffff;
 $panel-footer-padding: 					ceil($grid-gutter-width / 2) $grid-gutter-width;
-$panel-inner-border:  					#eee;
-$panel-default-border: 					#eee;
+$panel-inner-border:  					$gray-light;
+$panel-default-border: 					$gray-light;
 $panel-footer-bg: 						#ffffff;
 $panel-default-text: 					#ffffff;
-$panel-inner-border: 					#eee;
+$panel-inner-border: 					$gray-light;
 
-$border-radius-base: 					0;
+/** Card List Carousel **/
+$card-list-carousel-item-padding:		ceil(($grid-gutter-width / 2));
+
+$card-list-carousel-arrow-padding:		ceil(($grid-gutter-width / 2));
+$card-list-carousel-arrow-font-size:	40px;
+$card-list-carousel-arrow-line-height:	$card-list-carousel-arrow-font-size;
+$card-list-carousel-arrow-color:		$secondaryColor;
+
+$card-list-carousel-container-margin:	ceil((($card-list-carousel-arrow-font-size + ($card-list-carousel-arrow-padding * 2)) - $card-list-carousel-item-padding));
+$card-list-carousel-container-space:	ceil((($card-list-carousel-arrow-font-size + ($card-list-carousel-arrow-padding * 2)) * 2) - ($card-list-carousel-item-padding * 2));
+
+
+
+/** Carousel **/
+$carousel-arrow-padding:				ceil(($grid-gutter-width / 2));
+$carousel-arrow-font-size:				40px;
+$carousel-arrow-line-height:			$carousel-arrow-font-size;
+$carousel-arrow-color:					#fff;
+
+
+
+
+/*********************/
+
+$alert-border-width:1px;
+$alert-font-size:16px;
