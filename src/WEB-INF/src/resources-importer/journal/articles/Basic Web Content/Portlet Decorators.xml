@@ -9,16 +9,22 @@
 
 			<h3>Barebone</h3>
 			<p>Portlets will show without portlet title.</p>	
-			<img src="" alt=""/>
+			<div class="text-center>
+				<img src="[$FILE=portlet-decorator-barebone-sample.jpg$]" alt="Image Portlet Decorator Barebone"/>
+			</div>	
 
 			<h3>Without Padding</h3>
 			<p>Portlet will show without portlet title and padding of portlet content is setted to 0px.</p>
-			<img src="" alt=""/>
-
+			<div class="text-center>
+				<img src="[$FILE=portlet-decorator-nopadding-sample.jpg$]" alt="Image Portlet Decorator NoPadding"/>
+			</dv>
+				
 			<h3>Full Width</h3>
 			<p>Portlet will show without portlet title, padding of portlet content is setted to 0px and portlet fill the window from left to right.</p>	
-			<img src="" alt=""/>
-
+			<div class="text-center>
+				<img src="[$FILE=portlet-decorator-fullwidth-sample.jpg$]" alt="Image Portlet Decorator FullWidth"/>
+			</div>
+				
 		]]></dynamic-content>
 	</dynamic-element>
 </root>

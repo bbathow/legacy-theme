@@ -38,9 +38,9 @@
 	</#if>
 
 	<#if header_type == 'Full Width Header'>
-		<#assign container_type = 'type1' />
+		<#assign header_type = 'type1' />
 	<#else>
-		<#assign container_type = 'type2' />
+		<#assign header_type = 'type2' />
 	</#if>
 
 	<#if header_fluid == 'Header Fluid'>

@@ -1,4 +1,4 @@
-<section class="header-nav panel">			
+<section class="header-nav panel row">			
 	<button class="show-menu">
 		<span class="sr-only">Toggle navigation</span>
 		<span class="icon-bar"></span>

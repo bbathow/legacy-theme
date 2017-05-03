@@ -5,7 +5,7 @@
 <#assign Footer_Links = theme_display.getThemeSetting('Footer-Links') />
 
 <#if Footer_Links != ''>
-	<#assign rluuid = layoutService.getFriendlyURLLayout(group_id,false,'/footer') />
+	<#assign rluuid = layoutService.getFriendlyURLLayout(group_id,false, Footer_Links) />
 </#if>
 
 <#if (rluuid)??>
