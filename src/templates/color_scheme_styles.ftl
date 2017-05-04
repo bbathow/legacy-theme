@@ -73,9 +73,17 @@
     }	 
 
     /** MENU **/
-    .header-nav .show-menu .icon-bar{ 
-    	background: ${brand_color};
+    .type1 .header-nav{
+        background: ${brand_color};
     }
+    
+    .type1 .header-nav .show-menu .icon-bar{ 
+    	background: ${brand_color_text};
+    }
+    
+    .type2 .header-nav .show-menu .icon-bar{ 
+        background: ${brand_color};
+    }    
 
     .aside-bar {
 		background: ${gray_base};

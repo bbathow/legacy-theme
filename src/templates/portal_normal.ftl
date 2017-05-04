@@ -51,8 +51,8 @@
 
 	<div class="container-fluid" id="wrapper">
 		
-		<#if has_navigation && is_setup_complete>
-			<#include "${full_templates_path}/navigation.ftl" />
+		<#if has_navigation && is_setup_complete && header_type == 'type2'>
+			<#include "${full_templates_path}/aside-bar.ftl" />
 		</#if>
 
 		<div class="wrapper">
