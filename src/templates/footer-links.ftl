@@ -4,13 +4,7 @@
 <#assign VOID = freeMarkerPortletPreferences.setValue("displayDepth", "2") />
 <#assign Footer_Links = theme_display.getThemeSetting('Footer-Links') />
 
-<#if Footer_Links != ''>
-	<#assign rluuid = layoutService.getFriendlyURLLayout(group_id,false, Footer_Links) />
-</#if>
 
-<#if (rluuid)??>
-	<#assign VOID = freeMarkerPortletPreferences.setValue("rootLayoutUuid", rluuid.uuid) />
-</#if>
 
 <@liferay_portlet["runtime"]
 	defaultPreferences="${freeMarkerPortletPreferences}"

@@ -13,18 +13,18 @@
 		color:${gray_base};
 	}
 
-	input,input[type="checkbox"]:before, input[type="radio"]:before{
+	input,input[type="text"],input[type="email"],input[type="password"],input[type="number"],input[type="checkbox"]:before, input[type="radio"]:before{
         border-color: ${gray_base};
         color: ${gray_base};    
 	}
 
-    input[type="checkbox"]+label:before, input[type="radio"]+label:before,
     input[type="checkbox"]+label.default:before, input[type="radio"]+label.default:before{
         border-color: ${gray_base};
     }
 
+    input[type="checkbox"]+label:before, input[type="radio"]+label:before,
     input[type="checkbox"]+label.primary:before, input[type="radio"]+label.primary:before{
-        border-color: ${brand_color};   
+        border-color: ${brand_color};
     }
 
     label.primary,input.primary{
@@ -47,6 +47,17 @@
         color: ${brand_color_text};
         border-color: ${gray_base};
     }
+
+    input[type="checkbox"]:checked+label:before, input[type="radio"]:checked+label:before,input[type="radio"]:checked+label:before{
+        background:${brand_color};
+        color:${brand_color_text};
+        border-color:${brand_color};
+    } 
+
+    input[type="checkbox"]:checked+label.default:before, input[type="radio"]:checked+label.default:before{
+        background:${gray_base};
+        border-color:${gray_base};
+    }       
 
     .text-default{
         color: ${gray_base};
@@ -155,4 +166,8 @@
         color: ${brand_color};
     }
 
+    @media (max-width: 1200px){
+        .type1 nav{
+            background:${gray_base};
+        }
 </style>

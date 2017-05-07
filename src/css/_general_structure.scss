@@ -16,12 +16,11 @@
 
 @keyframes wrapperBarOut {
     0% {
-        margin-left: 300px;
+        margin-left: 255px;
         position: fixed;
         overflow-x: hidden;
         overflow-y: auto;
         height: 100%;
-        width: calc(100% - 300px);
         z-index: 10;
     }
 
@@ -31,7 +30,6 @@
         overflow-x: hidden;
         overflow-y: auto;
         height: 100%;
-        width: 100%;
         z-index: 10;
     }
 }
@@ -43,12 +41,12 @@
     &.aside-bar-active {
         .wrapper {
             transition: all 0.3s ease-out 0s;
-            margin-left: 300px;
+            margin-left: 255px;
             position: fixed;
             overflow-x: hidden;
             overflow-y: auto;
             height: 100%;
-            width: calc(100% - 300px);
+            width: 100%;
             z-index: 10;
         }
 
@@ -78,6 +76,7 @@
     padding: ceil($grid-gutter-width) ceil($grid-gutter-width) 0;
     background: $body-bg;
     margin-left: 0px;
+    width:100%;
 }
 
 #content{
@@ -93,7 +92,7 @@
     left: 0px;
     position: fixed;
     top: 0;
-    width: 300px;
+    width: 255px;
     background: $gray-dark;
     z-index: -1;
     opacity: 1;

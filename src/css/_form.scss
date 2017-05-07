@@ -18,6 +18,9 @@ input {
     margin-bottom: $grid-gutter-width;
 
     &[type="text"], &[type="number"], &[type="email"], &[type="password"] {
+
+        border:1px solid $gray-base;
+
         &[disabled], .disabled {
             border-color: $gray-light;
             background: #fff;
@@ -47,6 +50,7 @@ input {
                 top: 0;
                 content: '';
                 text-align: center;
+                line-height:18px;
             }
 
             &.big {
@@ -79,6 +83,7 @@ input {
                     background: $brand-primary;
                     content: 'check';
                     color: $colorLetterBackBlue;
+                    line-height:18px;
                 }
 
                 &.default {
@@ -86,6 +91,12 @@ input {
                         background: $secondaryColor;
                         color: $colorLetterBackBlue;
                         border-color: $secondaryColor;
+                    }
+                }
+
+                &.big{
+                    &:before{
+                        line-height:22px;
                     }
                 }
             }
