@@ -1,6 +1,8 @@
 <#assign brand_color = theme_display.getThemeSetting('Brand-Color') />
 <#assign brand_color_text = theme_display.getThemeSetting('Brand-Color-Text') />
 <#assign gray_base = theme_display.getThemeSetting('Gray-Base') />
+<#assign navbar_bg = theme_display.getThemeSetting('Navbar-Bg') />
+<#assign navbar_color = theme_display.getThemeSetting('Navbar-Color') />
 
 <style>
 
@@ -81,19 +83,27 @@
         background-color: ${brand_color};
         border-color: ${brand_color};
         color: ${brand_color_text};
-    }	 
+    }	
+
+	.btn.btn-border{
+		border:1px solid ${brand_color_text};	
+	}	
 
     /** MENU **/
     .type1 .header-nav{
-        background: ${brand_color};
+        background: ${navbar_bg};
     }
     
     .type1 .header-nav .show-menu .icon-bar{ 
-    	background: ${brand_color_text};
+    	background: ${navbar_color};
     }
+	
+	.type1 nav ul li a{
+		color: ${navbar_color};
+	}
     
     .type2 .header-nav .show-menu .icon-bar{ 
-        background: ${brand_color};
+        background: ${navbar_bg};
     }    
 
     .aside-bar {
@@ -165,6 +175,20 @@
     .modal-header .close, .modal-header .modal-primary-action-button{
         color: ${brand_color};
     }
+	
+	/** TEMPLATES **/
+	.highlighted-banner-template{
+		background: ${brand_color};
+	}
+	.highlighted-banner-template *{
+		color: ${brand_color_text};
+	}
+	
+	/** OTHERS **/
+	
+	.lfr-spa-loading-bar{
+		background: ${brand_color};
+	}
 
     @media (max-width: 1200px){
         .type1 nav{

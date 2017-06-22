@@ -3,6 +3,7 @@
    //padding: $btn-padding-vertical $btn-padding-horizontal;
     min-width: 100px;
     //line-height: $headings-line-height;
+	font-weight:300;
     
     + .btn{
         margin-left: $grid-gutter-width;
@@ -16,4 +17,9 @@
         min-width:0;
         background:0;
     }
+	
+	&.btn-border{
+		background:transparent;
+		border:1px solid $btn-primary-color;
+	}
 }

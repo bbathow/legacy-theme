@@ -1,0 +1,43 @@
+.highlighted-banner-template{
+
+	background: $brand-primary;
+    padding: 40px 0;
+	
+	*{
+		color: $btn-primary-color;
+		margin-top:0;
+		margin-bottom:0;
+	}
+	
+	.container{
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	
+	div[class^="col-"]{
+		
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		
+		align-items: center;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		
+	
+		> *{
+			margin-bottom: 10px;
+			
+			&:last-child{
+				margin-bottom:0;
+			}
+		}
+		
+		.btn{
+			min-width: 75%;
+			font-size: ceil(($font-size-base * 1.25));
+			line-height: 2.1875;
+		}
+	}
+}

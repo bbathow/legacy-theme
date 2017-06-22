@@ -12,6 +12,7 @@
 	<@liferay_util["include"] page=top_head_include />
 	
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 	
 </head>
 

@@ -56,7 +56,7 @@
 				<dynamic-element name="Alt" instance-id="osmp" type="text" index-type="keyword">
 					<dynamic-content language-id="es_ES"><![CDATA[sdgdsgs]]></dynamic-content>
 				</dynamic-element>
-				<dynamic-content language-id="es_ES" alt="" name="product1.jpg" title="product1.jpg" type="journal" id="157577"><![CDATA[[$FILE=product1.jpg$]]]></dynamic-content>
+				<dynamic-content language-id="es_ES" alt="" name="product1.jpg" title="product1.jpg" type="document" id="157577"><![CDATA[[$FILE=product1.jpg$]]]></dynamic-content>
 			</dynamic-element>
 			<dynamic-element name="Header" instance-id="lqla" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[Frenchie Dog]]></dynamic-content>
@@ -82,7 +82,7 @@
 				<dynamic-element name="Alt" instance-id="ltxs" type="text" index-type="keyword">
 					<dynamic-content language-id="es_ES"><![CDATA[alt]]></dynamic-content>
 				</dynamic-element>
-				<dynamic-content language-id="es_ES" alt="" name="product2.jpg" title="product2.jpg" type="journal" id="157578"><![CDATA[[$FILE=product2.jpg$]]]></dynamic-content>
+				<dynamic-content language-id="es_ES" alt="" name="product2.jpg" title="product2.jpg" type="document" id="157578"><![CDATA[[$FILE=product2.jpg$]]]></dynamic-content>
 			</dynamic-element>
 			<dynamic-element name="Header" instance-id="ueyc" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[Black Dog]]></dynamic-content>
@@ -108,7 +108,7 @@
 				<dynamic-element name="Alt" instance-id="mocd" type="text" index-type="keyword">
 					<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 				</dynamic-element>
-				<dynamic-content language-id="es_ES" alt="" name="product3.jpg" title="product3.jpg" type="journal" id="157579"><![CDATA[[$FILE=product3.jpg$]]]></dynamic-content>
+				<dynamic-content language-id="es_ES" alt="" name="product3.jpg" title="product3.jpg" type="document" id="157579"><![CDATA[[$FILE=product3.jpg$]]]></dynamic-content>
 			</dynamic-element>
 			<dynamic-element name="Header" instance-id="idfe" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[Dingo]]></dynamic-content>
@@ -134,7 +134,7 @@
 				<dynamic-element name="Alt" instance-id="jwga" type="text" index-type="keyword">
 					<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 				</dynamic-element>
-				<dynamic-content language-id="es_ES" alt="" name="product4.jpg" title="product4.jpg" type="journal" id="157580"><![CDATA[[$FILE=product4.jpg$]]]></dynamic-content>
+				<dynamic-content language-id="es_ES" alt="" name="product4.jpg" title="product4.jpg" type="document" id="157580"><![CDATA[[$FILE=product4.jpg$]]]></dynamic-content>
 			</dynamic-element>
 			<dynamic-element name="Header" instance-id="uubc" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[Grass & Hat]]></dynamic-content>
@@ -160,7 +160,7 @@
 				<dynamic-element name="Alt" instance-id="eerg" type="text" index-type="keyword">
 					<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 				</dynamic-element>
-				<dynamic-content language-id="es_ES" alt="" name="product5.jpg" title="product5.jpg" type="journal" id="157581"><![CDATA[[$FILE=product5.jpg$]]]></dynamic-content>
+				<dynamic-content language-id="es_ES" alt="" name="product5.jpg" title="product5.jpg" type="document" id="157581"><![CDATA[[$FILE=product5.jpg$]]]></dynamic-content>
 			</dynamic-element>
 			<dynamic-element name="Header" instance-id="jbhv" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[Flowers]]></dynamic-content>
@@ -186,7 +186,7 @@
 				<dynamic-element name="Alt" instance-id="mumh" type="text" index-type="keyword">
 					<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 				</dynamic-element>
-				<dynamic-content language-id="es_ES" alt="" name="product6.jpg" title="product6.jpg" type="journal" id="157582"><![CDATA[[$FILE=product6.jpg$]]]></dynamic-content>
+				<dynamic-content language-id="es_ES" alt="" name="product6.jpg" title="product6.jpg" type="document" id="157582"><![CDATA[[$FILE=product6.jpg$]]]></dynamic-content>
 			</dynamic-element>
 			<dynamic-element name="Header" instance-id="pmep" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[Little Bird]]></dynamic-content>
@@ -212,7 +212,7 @@
 				<dynamic-element name="Alt" instance-id="unln" type="text" index-type="keyword">
 					<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 				</dynamic-element>
-				<dynamic-content language-id="es_ES" alt="" name="product7.jpg" title="product7.jpg" type="journal" id="157583"><![CDATA[[$FILE=product7.jpg$]]]></dynamic-content>
+				<dynamic-content language-id="es_ES" alt="" name="product7.jpg" title="product7.jpg" type="document" id="157583"><![CDATA[[$FILE=product7.jpg$]]]></dynamic-content>
 			</dynamic-element>
 			<dynamic-element name="Header" instance-id="eacs" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[Sunset]]></dynamic-content>
@@ -238,7 +238,7 @@
 				<dynamic-element name="Alt" instance-id="ouus" type="text" index-type="keyword">
 					<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 				</dynamic-element>
-				<dynamic-content language-id="es_ES" alt="" name="product8.jpg" title="product8.jpg" type="journal" id="157584"><![CDATA[[$FILE=product8.jpg$]]]></dynamic-content>
+				<dynamic-content language-id="es_ES" alt="" name="product8.jpg" title="product8.jpg" type="document" id="157584"><![CDATA[[$FILE=product8.jpg$]]]></dynamic-content>
 			</dynamic-element>
 			<dynamic-element name="Header" instance-id="pkos" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[Mountain River]]></dynamic-content>
@@ -264,7 +264,7 @@
 				<dynamic-element name="Alt" instance-id="iwhx" type="text" index-type="keyword">
 					<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 				</dynamic-element>
-				<dynamic-content language-id="es_ES" alt="" name="product9.jpg" title="product9.jpg" type="journal" id="157585"><![CDATA[[$FILE=product9.jpg$]]]></dynamic-content>
+				<dynamic-content language-id="es_ES" alt="" name="product9.jpg" title="product9.jpg" type="document" id="157585"><![CDATA[[$FILE=product9.jpg$]]]></dynamic-content>
 			</dynamic-element>
 			<dynamic-element name="Header" instance-id="govw" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[Cake & iPhone]]></dynamic-content>
@@ -290,7 +290,7 @@
 				<dynamic-element name="Alt" instance-id="mquz" type="text" index-type="keyword">
 					<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 				</dynamic-element>
-				<dynamic-content language-id="es_ES" alt="" name="product10.jpg" title="product10.jpg" type="journal" id="157586"><![CDATA[[$FILE=product10.jpg$]]]></dynamic-content>
+				<dynamic-content language-id="es_ES" alt="" name="product10.jpg" title="product10.jpg" type="document" id="157586"><![CDATA[[$FILE=product10.jpg$]]]></dynamic-content>
 			</dynamic-element>
 			<dynamic-element name="Header" instance-id="tsfa" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[Beach]]></dynamic-content>
