@@ -141,61 +141,80 @@
     }
 }
 
+#wrapper.aside-bar-active.menu-type1 .wrapper{
+    margin-left:0;
+}
+
+#wrapper.aside-bar-closed .type1 .aside-bar{
+    visibility: visible;
+}
+
 .type1{
     margin: ceil(-($grid-gutter-width)) ceil(-($grid-gutter-width)) 0 ceil(-($grid-gutter-width));  
+
+    &.container{
+        margin:ceil(-($grid-gutter-width)) auto 0 auto;        
+    }
+
     .header-nav {
         display:flex;
         align-items:center;
         .show-menu {
             display:none;
         }
-    } 
-    nav{
+    }
+    .aside-bar{ 
         width:100%;
-        ul{
-            margin:0;
-            padding-left:0;
-            li{
-                display:inline;
-                list-style:none;
-                position:relative;
-                a{
-                    color:$btn-primary-color;
-                    padding: 18px 15px;
-                }
-                ul{
-                    display:none;
-                }
+        visibility: visible;
+        background:0;
 
-                &:hover{
+        nav{
+            width:100%;
+            ul{
+                margin:0;
+                padding-left:0;
+                li{
+                    display:inline;
+                    list-style:none;
+                    position:relative;
+                    a{
+                        color:$btn-primary-color;
+                        padding: 18px 15px;
+                    }
                     ul{
-                        background: #fff;
-                        display: block;
-                        left: 0;
-                        position: absolute;
-                        top: 37px;
-                        width: 200px;
-                        border:1px solid #ddd;
-                        border-top:0;
-                        padding:10px 0;
-                        z-index:9;
-                        
-                        li{
-                            float:left;
-                            width:100%;
-                            a{
-                                color:$brand-primary;
-                                float: left;
-                                padding: 5px 20px;
-                                width: 100%;    
-                                font-size:ceil(($font-size-base * 0.875));                            
+                        display:none;
+                    }
+
+                    &:hover{
+                        ul{
+                            background: #fff;
+                            display: block;
+                            left: 0;
+                            position: absolute;
+                            top: 37px;
+                            width: 200px;
+                            border:1px solid #ddd;
+                            border-top:0;
+                            padding:10px 0;
+                            z-index:9;
+                            
+                            li{
+                                float:left;
+                                width:100%;
+                                a{
+                                    color:$brand-primary;
+                                    float: left;
+                                    padding: 5px 20px;
+                                    width: 100%;    
+                                    font-size:ceil(($font-size-base * 0.875));                            
+                                }
                             }
                         }
                     }
                 }
             }
         }
-    }
+    }    
 }
 
 
@@ -219,26 +238,37 @@
         width: 100%;        
     }
 
-    .aside-bar-active .type1 nav{
+    .aside-bar-active .type1 .aside-bar{
         visibility: visible;
         z-index: 9;   
         left:0;     
     }
 
-    .aside-bar-closed .type1 nav{
+    .aside-bar-closed .type1 .aside-bar{
         visibility: hidden;
         animation-duration: 0.3s;
         animation-name: asideBarOut;
         animation-timing-function: ease-out;        
     }
 
+    .has-control-menu {
+        .type1{
+            .aside-bar {
+                margin-top: 64px;
+                transition: all 0.3s ease-out 0s;
+            }
+        }
+    }
 
+    #wrapper.aside-bar-active.menu-type1 .wrapper{
+        margin-left:255px;
+    }   
 
     .type1 { 
         .header-nav .show-menu{
             display:block;
         }
-        nav{
+        .aside-bar{
             height: 100%;
             left: -255px;
             position: fixed;
@@ -250,39 +280,42 @@
             visibility: hidden;
             transition: all 0.3s ease-out 0s;
             overflow-y:auto;
+                
+            nav{
 
-             > ul {
+                > ul {
                 margin: 0;
                 padding: ceil(($grid-gutter-width / 2)) $grid-gutter-width;
                 border-top: 2px solid #fff;
                 list-style: none;
 
-                li {
-                    float: left;
-                    width: 100%;
-
-                    a {
-                        padding: ceil(($grid-gutter-width / 2)) 0;
-                        color: $gray-light;
-                        font-size: ceil(($font-size-base * 1.125));
+                    li {
                         float: left;
                         width: 100%;
 
-                        &:hover {
-                            text-decoration: none;
-                        }
-                    }
-                    ul{
-                        display:block;
-                        padding-left:15px;
-                        
-                        a{
-                            font-size: ceil(($font-size-base * 0.875));        
-                        }
-                    }
+                        a {
+                            padding: ceil(($grid-gutter-width / 2)) 0;
+                            color: $gray-light;
+                            font-size: ceil(($font-size-base * 1.125));
+                            float: left;
+                            width: 100%;
 
-                    .delete-tab {
-                        color: $gray-light;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                        ul{
+                            display:block;
+                            padding-left:15px;
+                            
+                            a{
+                                font-size: ceil(($font-size-base * 0.875));        
+                            }
+                        }
+
+                        .delete-tab {
+                            color: $gray-light;
+                        }
                     }
                 }
             }

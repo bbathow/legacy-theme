@@ -49,7 +49,7 @@
 		<#assign header_fluid = 'container' />
 	</#if>
 
-	<div class="container-fluid" id="wrapper">
+	<div class="container-fluid  menu-${header_type}" id="wrapper">
 		
 		<#if has_navigation && is_setup_complete && header_type == 'type2'>
 			<#include "${full_templates_path}/aside-bar.ftl" />
@@ -99,6 +99,7 @@
 
 	<!-- inject:js -->
 	<script src="${javascript_folder}/libs/owl.carousel.min.js" type="text/javascript"/></script>
+	<script src="${javascript_folder}/libs/shuffle.min.js" type="text/javascript"/></script>
 	<!-- endinject -->
 
 

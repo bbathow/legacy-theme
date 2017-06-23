@@ -96,7 +96,7 @@
         background: ${brand_color};
     }    
 
-    .aside-bar {
+    .type2 .aside-bar {
 		background: ${gray_base};
     }
 
@@ -167,7 +167,7 @@
     }
 
     @media (max-width: 1200px){
-        .type1 nav{
+        .type1 .aside-bar{
             background:${gray_base};
         }
 </style>

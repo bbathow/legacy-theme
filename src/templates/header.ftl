@@ -13,10 +13,11 @@
 				<img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
 			</a>
 		</div>	
-		<#if has_navigation && is_setup_complete>
-			<#include "${full_templates_path}/navigation.ftl" />
-		</#if>
 
+		<#if has_navigation && is_setup_complete>
+			<#include "${full_templates_path}/aside-bar.ftl" />
+		</#if>
+		
 		<#if !is_signed_in>
 			<a class="login-link visible-lg" data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" rel="nofollow">
 				<svg class="lexicon-icon">

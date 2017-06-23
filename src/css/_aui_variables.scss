@@ -123,5 +123,12 @@ $carousel-arrow-color:					#fff;
 
 /*********************/
 
-$alert-border-width:1px;
-$alert-font-size:16px;
+$alert-border-width:					1px;
+$alert-font-size:						16px;
+
+$management-bar-default-btn-default-bg: $btn-default-bg;
+$management-bar-default-btn-default-color: $gray-base;
+$management-bar-default-btn-default-border: $gray-base;
+
+$splitter-bg: lighten($brand-primary,60%);
+$splitter-text-color: $brand-primary;

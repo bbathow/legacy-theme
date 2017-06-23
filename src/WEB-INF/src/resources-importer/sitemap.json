@@ -8,10 +8,43 @@
 			"title": "Home"
 		},
 		{
-			"columns": [],
 			"friendlyURL": "/the-company",
 			"name": "The Company",
-			"title": "The Company"
+			"title": "The Company",
+			"columns": [
+				{
+                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                    "portletPreferences": {
+                        "articleId": "THE-COMPANY-IMAGE",
+                        "groupId": "${groupId}",
+                        "portletSetupPortletDecoratorId": "fullwidth"
+                    }
+                },
+				{
+                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                    "portletPreferences": {
+                        "articleId": "THE-COMPANY-PAGE",
+                        "groupId": "${groupId}",
+                        "portletSetupPortletDecoratorId": "barebone"
+                    }
+                },       
+				{
+                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                    "portletPreferences": {
+                        "articleId": "OUR-TEAM-TITLE",
+                        "groupId": "${groupId}",
+                        "portletSetupPortletDecoratorId": "barebone"
+                    }
+                },
+				{
+                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                    "portletPreferences": {
+                        "articleId": "OUR-TEAM-CARDS",
+                        "groupId": "${groupId}",
+                        "portletSetupPortletDecoratorId": "nopadding"
+                    }
+                },        
+			]			
 		},
 		{
 			"columns": [],
@@ -20,15 +53,53 @@
 			"title": "Products"
 		},
 		{
-			"columns": [],
 			"friendlyURL": "/blog",
 			"name": "Blog",
-			"title": "Blog"
+			"title": "Blog",
+			"layoutTemplateId": "1_2_columns_ii",
+			"columns": [
+				[
+					{
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "BLOG-PAGE-TITLE",
+                            "groupId": "${groupId}",
+                            "portletSetupPortletDecoratorId": "barebone"
+                        }
+                    }
+                ],
+                [    					
+					{
+                        "portletId": "com_liferay_blogs_web_portlet_BlogsPortlet",
+                        "portletPreferences": {
+                            "groupId": "${groupId}",
+                            "portletSetupPortletDecoratorId": "barebone"
+                        }
+                    }
+                ],
+                [
+					{
+                        "portletId": "com_liferay_asset_tags_navigation_web_portlet_AssetTagsCloudPortlet",
+                        "portletPreferences": {
+                            "groupId": "${groupId}",
+                            "portletSetupPortletDecoratorId": "decorate"
+                        }
+                    },                  	
+					{
+                        "portletId": "com_liferay_blogs_recent_bloggers_web_portlet_RecentBloggersPortlet",
+                        "portletPreferences": {
+                            "groupId": "${groupId}",
+                            "portletSetupPortletDecoratorId": "decorate"
+                        }
+                    }                	
+                ]
+            ]    
+                    			
 		},
 		{
 			"friendlyURL": "/theme-settings-portlet-decorators",
-			"name": "Theme Settings & Portlet Decorators",
-			"title": "Theme Setting & Portlet Decorators",
+			"name": "Settings & Decorators",
+			"title": "Setting & Decorators",
 			"columns": [
 				[
 					{
@@ -292,7 +363,25 @@
 						[
 						]
 					]
-				}
+				},
+				{
+					"friendlyURL": "/animate-css",
+					"name": "Animate CSS",
+					"title": "Animate CSS",
+					"columns": [
+						[
+   						
+	   						{ 
+   								"portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+		                        "portletPreferences": {
+		                            "articleId": "ANIMATE-CSS",
+		                            "groupId": "${groupId}",
+		                            "portletSetupPortletDecoratorId": "barebone"
+		                        }
+		                    }
+		                ]    						
+					]
+				}					
 			]					
 		},										
 		{

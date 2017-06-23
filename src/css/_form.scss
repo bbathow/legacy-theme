@@ -166,6 +166,18 @@ input {
 .form-group {
     margin-bottom: $grid-gutter-width;
 
+    &.input-checkbox-wrapper{
+        label {
+
+            input{
+                position:static;
+                left:0;
+                width:auto;
+                margin-right: ceil(($grid-gutter-width / 2));
+            }
+        }    
+    }
+
     .input-group {
         .input-group-addon {
             color: #ffffff;

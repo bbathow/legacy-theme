@@ -87,90 +87,99 @@
 
 /** ASIDE BAR **/
 
-.aside-bar {
-    height: 100%;
-    left: 0px;
-    position: fixed;
-    top: 0;
-    width: 255px;
-    background: $gray-dark;
-    z-index: -1;
-    opacity: 1;
-    visibility: hidden;
+#heading {
+    height: 100px;
+    background: $brand-primary;
+    display: flex;
+    align-items: center;
+    padding: $grid-gutter-width;
 
-    #heading {
-        height: 100px;
-        background: $brand-primary;
-        display: flex;
+    .heading-user {
         align-items: center;
-        padding: $grid-gutter-width;
+        display: flex;
+        float: left;
+        width: 100%;
 
-        .heading-user {
-            align-items: center;
-            display: flex;
+        .heading-user-img {
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            overflow: hidden;
+            text-align: center;
             float: left;
-            width: 100%;
+        }
 
-            .heading-user-img {
-                border-radius: 50%;
-                -webkit-border-radius: 50%;
-                overflow: hidden;
-                text-align: center;
-                float: left;
-            }
+        .heading-user-name {
+            color: $btn-primary-color;
+            font-size: ceil(($font-size-base * 1.125));
+            padding-left: $grid-gutter-width;
+            float: left;
+            width: calc(100% - 70px);
 
-            .heading-user-name {
-                color: $gray-light;
-                font-size: ceil(($font-size-base * 1.125));
-                padding-left: $grid-gutter-width;
-                float: left;
-                width: calc(100% - 70px);
-            }
-
-            .heading-user-menu-icon {
-                color: $gray-light;
-                float: right;
-                text-align: right;
-                cursor: pointer;
+            a{
+                color:$btn-primary-color;
             }
         }
+
+        .heading-user-menu-icon {
+            color: $btn-primary-color;
+            float: right;
+            text-align: right;
+            cursor: pointer;
+        }
     }
+}
 
-    nav {
-        > ul {
-            margin: 0;
-            padding: ceil(($grid-gutter-width / 2)) $grid-gutter-width;
-            border-top: 2px solid #fff;
-            list-style: none;
 
-            li {
-                float: left;
-                width: 100%;
 
-                a {
-                    padding: ceil(($grid-gutter-width / 2)) 0;
-                    color: $gray-light;
-                    font-size: ceil(($font-size-base * 1.125));
+.menu-type2{
+    .aside-bar {
+        height: 100%;
+        left: 0px;
+        position: fixed;
+        top: 0;
+        width: 255px;
+        background: $gray-dark;
+        z-index: -1;
+        opacity: 1;
+        visibility: hidden;
+
+        nav {
+            > ul {
+                margin: 0;
+                padding: ceil(($grid-gutter-width / 2)) $grid-gutter-width;
+                border-top: 2px solid #fff;
+                list-style: none;
+
+                li {
                     float: left;
                     width: 100%;
 
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
+                    a {
+                        padding: ceil(($grid-gutter-width / 2)) 0;
+                        color: $gray-light;
+                        font-size: ceil(($font-size-base * 1.125));
+                        float: left;
+                        width: 100%;
 
-                .delete-tab {
-                    color: $gray-light;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .delete-tab {
+                        color: $gray-light;
+                    }
                 }
             }
         }
     }
 }
-
 .has-control-menu {
-    .aside-bar {
-        margin-top: 64px;
-        transition: all 0.3s linear 0s;
+    .menu-type2{
+        .aside-bar {
+            margin-top: 64px;
+            transition: all 0.3s ease-out 0s;
+        }
     }
 
     &.open {
