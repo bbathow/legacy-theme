@@ -12,6 +12,7 @@
 	<@liferay_util["include"] page=top_head_include />
 	
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 	
 </head>
 
@@ -99,7 +100,10 @@
 
 	<!-- inject:js -->
 	<script src="${javascript_folder}/libs/owl.carousel.min.js" type="text/javascript"/></script>
-	<script src="${javascript_folder}/libs/shuffle.min.js" type="text/javascript"/></script>
+	<script src="${javascript_folder}/libs/jquery.easing.js" type="text/javascript"/></script>
+	<script src="${javascript_folder}/libs/jquery-css-transform.js" type="text/javascript"/></script>
+	<script src="${javascript_folder}/libs/jquery-animate-css-rotate-scale.js" type="text/javascript"/></script>
+	<script src="${javascript_folder}/libs/quicksand.js" type="text/javascript"/></script>
 	<!-- endinject -->
 
 

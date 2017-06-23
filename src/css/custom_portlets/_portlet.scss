@@ -35,4 +35,19 @@
             background: 0;
         }
     }
+	
+    &.portlet-noPaddingMargin {
+	
+		.portlet{
+			margin:ceil(-$grid-gutter-width);
+			width:"calc(100%  +  #{ceil($grid-gutter-width * 2)})";
+		
+			.portlet-content {
+				padding: 0;
+				border: 0;
+				background: 0;
+			}
+		}	
+    }
+	
 }

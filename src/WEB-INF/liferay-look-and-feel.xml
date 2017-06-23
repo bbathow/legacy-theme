@@ -23,6 +23,9 @@
 		<portlet-decorator id="fullwidth" name="Full Width">
 			<portlet-decorator-css-class>portlet-fullWidth</portlet-decorator-css-class>
 		</portlet-decorator>
+		<portlet-decorator id="nopaddingmargin" name="Without Padding and Margin">
+			<portlet-decorator-css-class>portlet-noPaddingMargin</portlet-decorator-css-class>
+		</portlet-decorator>		
 
 		<settings>
 			<setting configurable="true" key="Show-Breadcrumbs" type="checkbox" value="false"/>
@@ -270,6 +273,163 @@
 			
 			</setting>
 
+			<setting configurable="true" key="Navbar-Bg" type="text" value="#333333">
+                    <![CDATA[
+                            AUI().ready(
+                                'aui-color-picker-popover',
+                                function(A) {
+
+                                    var target = A.one('#[@NAMESPACE@]Navbar-Bg');
+                                    target.attr('readonly', 'readonly');
+                                    var currentValue = target.val();
+ 
+ 
+                                    setTimeout(function() {
+ 
+                                        target.ancestor().append("<span class='glyphicon glyphicon-pencil' aria-hidden='true' style='top: -30px;left: calc(100% - 25px);color: #869cad;'></span>");
+                                        target.ancestor().append("<div id='[@NAMESPACE@]PortalMainColorPicker1'></div>");
+ 
+                                            var [@NAMESPACE@]PortalMainColorPicker1 = new A.ColorPickerPopover(
+                                                {
+													trigger: target
+                                                }
+                                            ).render('#[@NAMESPACE@]PortalMainColorPicker1');
+ 
+                                            [@NAMESPACE@]PortalMainColorPicker1.on('select',
+                                                function(event) {
+                                                    var hex = event.color;
+ 
+                                                    target.val(hex);
+                                                    target.setStyle('backgroundColor', hex);
+													
+													
+
+													var rgb = hexToRgb(hex);
+
+													var red=rgb.r;
+													var blue=rgb.b;
+													var green=rgb.g;
+
+													var brightness;
+													brightness = (red * 299) + (green * 587) + (blue * 114);
+													brightness = brightness / 255000;
+
+													if (brightness >= 0.5) {
+
+														target.setStyle('color','#869cad');
+														target.next().setStyle('color','#869cad');
+														
+													} else {
+													
+														target.setStyle('color','#ffffff');
+														target.next().setStyle('color','#ffffff');
+														
+													};
+
+                                                }
+                                            );
+											
+											function hexToRgb(hex) {
+                                                var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+                                                hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+                                                    return r + r + g + g + b + b;
+                                                });
+ 
+                                                var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+                                                return result ? {
+                                                    r: parseInt(result[1], 16),
+                                                    g: parseInt(result[2], 16),
+                                                    b: parseInt(result[3], 16)
+                                                } : null;
+                                            };											
+											
+ 
+                                    }, 1000);
+                                }
+                            );
+ 
+                    ]]>
+            </setting>        
+ 			
+			<setting configurable="true" key="Navbar-Color" type="text" value="#ffffff">
+                    <![CDATA[
+                            AUI().ready(
+                                'aui-color-picker-popover',
+                                function(A) {
+
+                                    var target = A.one('#[@NAMESPACE@]Navbar-Color');
+                                    target.attr('readonly', 'readonly');
+                                    var currentValue = target.val();
+ 
+ 
+                                    setTimeout(function() {
+ 
+                                        target.ancestor().append("<span class='glyphicon glyphicon-pencil' aria-hidden='true' style='top: -30px;left: calc(100% - 25px);color: #869cad;'></span>");
+                                        target.ancestor().append("<div id='[@NAMESPACE@]PortalMainColorPicker1'></div>");
+ 
+                                            var [@NAMESPACE@]PortalMainColorPicker1 = new A.ColorPickerPopover(
+                                                {
+													trigger: target
+                                                }
+                                            ).render('#[@NAMESPACE@]PortalMainColorPicker1');
+ 
+                                            [@NAMESPACE@]PortalMainColorPicker1.on('select',
+                                                function(event) {
+                                                    var hex = event.color;
+ 
+                                                    target.val(hex);
+                                                    target.setStyle('backgroundColor', hex);
+													
+													
+
+													var rgb = hexToRgb(hex);
+
+													var red=rgb.r;
+													var blue=rgb.b;
+													var green=rgb.g;
+
+													var brightness;
+													brightness = (red * 299) + (green * 587) + (blue * 114);
+													brightness = brightness / 255000;
+
+													if (brightness >= 0.5) {
+
+														target.setStyle('color','#869cad');
+														target.next().setStyle('color','#869cad');
+														
+													} else {
+													
+														target.setStyle('color','#ffffff');
+														target.next().setStyle('color','#ffffff');
+														
+													};
+
+                                                }
+                                            );
+											
+											function hexToRgb(hex) {
+                                                var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+                                                hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+                                                    return r + r + g + g + b + b;
+                                                });
+ 
+                                                var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+                                                return result ? {
+                                                    r: parseInt(result[1], 16),
+                                                    g: parseInt(result[2], 16),
+                                                    b: parseInt(result[3], 16)
+                                                } : null;
+                                            };											
+											
+ 
+                                    }, 1000);
+                                }
+                            );
+ 
+                    ]]>
+            </setting>   	
+
+	
             <setting configurable="true" key="Footer-Links" type="text" value="/footer"/>
 
             <setting configurable="true" key="Show-Facebook-Link" type="checkbox" value="true"/>

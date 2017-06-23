@@ -45,7 +45,7 @@
 			</a>
 		</#if>
 
-		<#if portlet_display.getPortletDecoratorId() != "barebone" && portlet_display.getPortletDecoratorId() != "fullwidth" && portlet_display.getPortletDecoratorId() != "nopadding">
+		<#if portlet_display.getPortletDecoratorId() != "barebone" && portlet_display.getPortletDecoratorId() != "fullwidth" && portlet_display.getPortletDecoratorId() != "nopadding" && portlet_display.getPortletDecoratorId() != "nopaddingmargin">
 			<h2 class="portlet-title-text">${portlet_title}</h2>
 		</#if>
 		
