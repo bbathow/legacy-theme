@@ -11,11 +11,13 @@ body{
 h1 {
     color: $brand-primary;
     margin-top: 0;
+	font-weight:300;
 }
 
 h2 {
     color: $brand-primary;
     margin: 0;
+	font-weight:300;
 
     + * {
         margin-top: $grid-gutter-width;
@@ -25,13 +27,16 @@ h2 {
 h3 {
     color: $gray-base;
     margin: 0 0 $grid-gutter-width 0;
+	font-weight:300;
 }
 
 h4 {
     color: $gray-base;
     margin: 0 0 ceil(($grid-gutter-width / 2)) 0;
+	font-weight:500;
 }
 
 p {
     margin-bottom: $grid-gutter-width;
+	font-weight:300;
 }

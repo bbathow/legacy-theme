@@ -22,4 +22,9 @@
 		background:transparent;
 		border:1px solid $btn-primary-color;
 	}
+	&.btn-border-primary{
+		background:transparent;
+		border:1px solid $brand-primary;
+		color:$brand-primary;
+	}	
 }

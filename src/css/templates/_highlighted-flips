@@ -1,0 +1,28 @@
+.hightlighted-flips-template{
+
+	.row + .row{
+		margin-top:60px;
+	}
+
+	.icon i{
+		border-radius:50%;
+		-webkit-border-radius:50%;
+		background: $gray-base;
+		color:$btn-primary-color;
+		padding:20px;
+		text-laign:center;
+		margin-bottom:10px;
+	}
+	
+	.info{
+	
+		> *{
+			
+			&:last-child{
+				margin-bottom:0;
+			}
+		}	
+	
+	}
+
+}

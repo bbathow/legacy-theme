@@ -39,13 +39,17 @@
     &.portlet-noPaddingMargin {
 	
 		.portlet{
-			margin:ceil(-$grid-gutter-width);
-			width:"calc(100%  +  #{ceil($grid-gutter-width * 2)})";
+			margin-bottom: 0;
+			margin-top: 0;
 		
 			.portlet-content {
 				padding: 0;
 				border: 0;
 				background: 0;
+				margin-left: -20px;
+				margin-right: -20px;
+				float: none;
+				width: initial;				
 			}
 		}	
     }

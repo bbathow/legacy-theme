@@ -198,3 +198,41 @@
 .lfr-spa-loading-bar{
 	background:$brand-primary;
 }
+
+.material-icons{
+	&.icon-large{
+		font-size:16px;
+	}
+	
+	&.icon-2x{
+		font-size:2em;
+	}
+	
+	&.icon-3x{
+		font-size:3em;
+	}
+	
+	&.icon-4x{
+		font-size:4em;
+	}
+	
+	&.icon-5x{
+		font-size:5em;
+	}
+	
+    &.tiny{
+		font-size: 1rem;
+	}
+	
+    &.small{
+		font-size:2rem;
+	}
+	
+	&.medium{
+		font-size:4rem;
+	}
+	
+	&.large{
+		font-size:6rem;
+	}	
+}

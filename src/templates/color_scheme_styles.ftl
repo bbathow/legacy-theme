@@ -87,7 +87,13 @@
 
 	.btn.btn-border{
 		border:1px solid ${brand_color_text};	
+		color:1px solid ${brand_color_text};
 	}	
+	
+	.btn.btn-border-primary{
+		border:1px solid ${brand_color};	
+		color:${brand_color};	
+	}		
 
     /** MENU **/
     .type1 .header-nav{
