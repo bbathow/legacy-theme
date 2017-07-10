@@ -18,7 +18,7 @@
 			<dynamic-element name="alt" instance-id="obil" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="team1.jpg" title="team1.jpg" type="journal" id="201251"><![CDATA[[$FILE=team1.jpg$]]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="team1" title="team1" type="document"><![CDATA[[$FILE=team1.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="fupa" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Robert Greeace]]></dynamic-content>
@@ -41,7 +41,7 @@
 			<dynamic-element name="alt" instance-id="kfzi" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" name="team2.jpg" title="team2.jpg" type="journal" id="201252"><![CDATA[[$FILE=team2.jpg$]]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="team2" title="team2" type="document"><![CDATA[[$FILE=team2.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="mdoo" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[André Maverick]]></dynamic-content>
@@ -64,7 +64,7 @@
 			<dynamic-element name="alt" instance-id="fnty" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="team3.jpg" title="team3.jpg" type="journal" id="201253"><![CDATA[[$FILE=team3.jpg$]]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="team3" title="team3" type="document"><![CDATA[[$FILE=team3.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="cnxj" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Cedric Nielsen]]></dynamic-content>
@@ -87,7 +87,7 @@
 			<dynamic-element name="alt" instance-id="hmoy" type="text" index-type="keyword">
 				<dynamic-content language-id="es_ES"><![CDATA[]]></dynamic-content>
 			</dynamic-element>
-			<dynamic-content language-id="es_ES" alt="" name="team4.jpg" title="team4.jpg" type="journal" id="201254"><![CDATA[[$FILE=team4.jpg$]]]></dynamic-content>
+			<dynamic-content language-id="es_ES" alt="" name="team4" title="team4" type="document"><![CDATA[[$FILE=team4.jpg$]]]></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="header" instance-id="fsvz" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[James Little]]></dynamic-content>
@@ -106,3 +106,4 @@
 		</dynamic-element>
 	</dynamic-element>
 </root>
+

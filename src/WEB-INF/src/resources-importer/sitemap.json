@@ -12,39 +12,41 @@
 			"name": "The Company",
 			"title": "The Company",
 			"columns": [
-				{
-                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
-                    "portletPreferences": {
-                        "articleId": "THE-COMPANY-IMAGE",
-                        "groupId": "${groupId}",
-                        "portletSetupPortletDecoratorId": "fullwidth"
-                    }
-                },
-				{
-                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
-                    "portletPreferences": {
-                        "articleId": "THE-COMPANY-PAGE",
-                        "groupId": "${groupId}",
-                        "portletSetupPortletDecoratorId": "barebone"
-                    }
-                },       
-				{
-                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
-                    "portletPreferences": {
-                        "articleId": "OUR-TEAM-TITLE",
-                        "groupId": "${groupId}",
-                        "portletSetupPortletDecoratorId": "barebone"
-                    }
-                },
-				{
-                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
-                    "portletPreferences": {
-                        "articleId": "OUR-TEAM-CARDS",
-                        "groupId": "${groupId}",
-                        "portletSetupPortletDecoratorId": "nopadding"
-                    }
-                },        
-			]			
+				[
+					{
+	                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+	                    "portletPreferences": {
+	                        "articleId": "THE-COMPANY-IMAGE",
+	                        "groupId": "${groupId}",
+	                        "portletSetupPortletDecoratorId": "fullwidth"
+	                    }
+	                },
+					{
+	                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+	                    "portletPreferences": {
+	                        "articleId": "THE-COMPANY-PAGE",
+	                        "groupId": "${groupId}",
+	                        "portletSetupPortletDecoratorId": "barebone"
+	                    }
+	                },       
+					{
+	                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+	                    "portletPreferences": {
+	                        "articleId": "OUR-TEAM-TITLE",
+	                        "groupId": "${groupId}",
+	                        "portletSetupPortletDecoratorId": "barebone"
+	                    }
+	                },
+					{
+	                    "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+	                    "portletPreferences": {
+	                        "articleId": "OUR-TEAM-CARDS",
+	                        "groupId": "${groupId}",
+	                        "portletSetupPortletDecoratorId": "nopadding"
+	                    }
+	                },        
+				]
+			]				
 		},
 		{
 			"columns": [],
@@ -513,7 +515,7 @@
 							{
 		                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
 		                        "portletPreferences": {
-		                            "articleId": "IMAGE-CAROUSEL",
+		                            "articleId": "IMAGE-CAROUSEL-2",
 		                            "groupId": "${groupId}",
 		                            "portletSetupPortletDecoratorId": "nopadding"
 		                        }
