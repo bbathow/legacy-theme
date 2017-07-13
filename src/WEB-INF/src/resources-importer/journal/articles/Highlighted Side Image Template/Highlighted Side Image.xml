@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<root available-locales="es_ES" default-locale="es_ES">
+	<dynamic-element name="ImagePosition" type="list" index-type="keyword" instance-id="tzml">
+		<dynamic-content language-id="es_ES"><![CDATA[left]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="Image" type="image" index-type="keyword" instance-id="odxw">
+		<dynamic-element name="Alt" instance-id="cxqh" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[Example]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content language-id="es_ES" alt="" name="monument.jpg" title="monument.jpg" type="document"><![CDATA[[$FILE=monument.jpg$]]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="Content" type="text_area" index-type="keyword" instance-id="mtcq">
+		<dynamic-content language-id="es_ES"><![CDATA[<h2>Pre-Built Dummy Websites</h2>
+
+<h3>easy to install and customise</h3>
+
+<p>The7 comes with 26 (and counting) pre-made dummy websites complete with exclusive Slider Revolution and Visual Composer templates. They all can be imported in a few clicks, mixed and matched to become a solid foundation for your site.</p>]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="ShowButton" type="boolean" index-type="keyword" instance-id="zdbd">
+		<dynamic-element name="Button" instance-id="rrwe" type="link_to_layout" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[1@public@20147]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="ButtonText" instance-id="cgxb" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[View All]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="Title" instance-id="calr" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[Go to Home Page]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content language-id="es_ES"><![CDATA[true]]></dynamic-content>
+	</dynamic-element>
+</root>

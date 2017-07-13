@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<root available-locales="es_ES" default-locale="es_ES">
+	<dynamic-element name="Content" type="text_area" index-type="keyword" instance-id="wldj">
+		<dynamic-content language-id="es_ES"><![CDATA[<h2>Lorem ipsum dolor sit amet</h2>
+
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="Button" type="link_to_layout" index-type="keyword" instance-id="iglo">
+		<dynamic-element name="ButtonText" instance-id="qnbc" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[Click here!]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="Title" instance-id="wspn" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[Go to Footer]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content language-id="es_ES"><![CDATA[6@public@20147]]></dynamic-content>
+	</dynamic-element>
+</root>

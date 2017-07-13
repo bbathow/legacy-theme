@@ -25,7 +25,10 @@
 		</portlet-decorator>
 		<portlet-decorator id="nopaddingmargin" name="Without Padding and Margin">
 			<portlet-decorator-css-class>portlet-noPaddingMargin</portlet-decorator-css-class>
-		</portlet-decorator>		
+		</portlet-decorator>
+		<portlet-decorator id="nopaddingmarginwhite" name="White Without Padding and Margin ">
+			<portlet-decorator-css-class>portlet-noPaddingMarginWhite</portlet-decorator-css-class>
+		</portlet-decorator>			
 
 		<settings>
 			<setting configurable="true" key="Show-Breadcrumbs" type="checkbox" value="false"/>
