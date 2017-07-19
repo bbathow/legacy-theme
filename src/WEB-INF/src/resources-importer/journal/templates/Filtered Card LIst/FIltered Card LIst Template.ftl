@@ -13,30 +13,44 @@
 <div class="filtered-card-list-template">
 
     <form id="filter">
-        <fieldset>
-            <legend>Filter by type</legend> 
-            <#if showFilterAll == 'true'>
-                <label>
-                    <input checked="checked" name="type" type="radio" value="all">
-                    ${filterAllName}
-                </label> 
-            </#if>    
-            <#list filtersList as filter>
-                <label>
-                    <input name="type" type="radio" value="${filter.FilterValue.getData()}">
-                    ${filter.FilterName.getData()}
-                </label> 
-            </#list>  
-        </fieldset> 
+        <div class="row">
+            <fieldset class="col-md-8 col-xs-12">
+                <legend class="sr-only">Filter by type</legend> 
+                <div class="row">
+                    <#if showFilterAll == 'true'>
+                        <div class="col-md-2">
+                            <label class="btn btn-primary">
+                                <input checked="checked" name="type" type="radio" value="all">
+                                ${filterAllName}
+                            </label> 
+                        </div>    
+                    </#if>    
+                    <#list filtersList as filter>
+                        <div class="col-md-2">
+                            <label class="btn btn-default">
+                                <input name="type" type="radio" value="${filter.FilterValue.getData()}">
+                                ${filter.FilterName.getData()}
+                            </label> 
+                        </div>    
+                    </#list>  
+                </div>    
+            </fieldset> 
         
-        <fieldset class="orderBy">
-            <label>Sort by</label> 
-            <select name="sort">
-                <option value="nameaz">Name, A to Z</option>
-                <option value="nameza">Name, Z to A</option>
-                <option value="description">Description</option>
-            </select>
-        </fieldset> 
+            <fieldset class="orderBy col-md-4 col-xs-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label class="btn">Sort by</label>
+                    </div>
+                    <div class="col-md-9">
+                        <select name="sort" class="form-control">
+                            <option value="nameaz">Name, A to Z</option>
+                            <option value="nameza">Name, Z to A</option>
+                            <option value="description">Description</option>
+                        </select>
+                    </div>    
+                </div>
+            </fieldset> 
+        </div>
     </form>
     <div class="cards-list">
         <div class="row">

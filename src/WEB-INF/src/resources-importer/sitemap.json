@@ -49,10 +49,21 @@
 			]				
 		},
 		{
-			"columns": [],
 			"friendlyURL": "/products",
 			"name": "Products",
-			"title": "Products"
+			"title": "Products",
+			"columns": [
+				[
+					{
+                        "portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+                        "portletPreferences": {
+                            "articleId": "PRODUCTS",
+                            "groupId": "${groupId}",
+                            "portletSetupPortletDecoratorId": "barebone"
+                        }
+                    }
+                ]
+            ]    			
 		},
 		{
 			"friendlyURL": "/blog",
