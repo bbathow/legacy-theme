@@ -6,7 +6,7 @@
 		margin-top:60px;
 	}
 
-	.icon i{
+	.icon i,.icon span{
 		border-radius:50%;
 		-webkit-border-radius:50%;
 		background: $gray-base;
@@ -14,6 +14,7 @@
 		padding:20px;
 		text-laign:center;
 		margin-bottom:10px;
+		display:inline-block;
 	}
 	
 	.info{

@@ -5,11 +5,6 @@
 	}
 
 	.owl-controls{
-		margin:0;
-		position:absolute;
-		width:100%;
-		top:50%;
-		margin-top: ceil(-($carousel-arrow-line-height + ($carousel-arrow-padding * 2)) /2);
 		
 		.owl-buttons > div{
 			background: 0;
@@ -18,12 +13,18 @@
 			margin: 0;
 			padding: $carousel-arrow-padding;
 			color: $carousel-arrow-color;
+
+
+			margin:0;
+			position:absolute;
+			top:50%;
+			margin-top: ceil(-($carousel-arrow-line-height + ($carousel-arrow-padding * 2)) /2);			
 			
 			&.owl-next{
-				float:right;
+				right:0;
 			}
 			&.owl-prev{
-				float:left;
+				left:0;
 			}			
 		}
 	}

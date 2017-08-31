@@ -19,7 +19,7 @@
 	</dynamic-element>
 	<dynamic-element name="ShowButton" type="boolean" index-type="keyword" instance-id="zdbd">
 		<dynamic-element name="Button" instance-id="rrwe" type="link_to_layout" index-type="keyword">
-			<dynamic-content language-id="es_ES"><![CDATA[1@public@20147]]></dynamic-content>
+			<dynamic-content language-id="es_ES"></dynamic-content>
 		</dynamic-element>
 		<dynamic-element name="ButtonText" instance-id="cgxb" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[View All]]></dynamic-content>

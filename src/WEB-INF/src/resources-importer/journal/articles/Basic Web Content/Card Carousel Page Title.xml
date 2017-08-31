@@ -3,10 +3,10 @@
 <root available-locales="es_ES" default-locale="es_ES">
 	<dynamic-element name="content" type="text_area" index-type="keyword" instance-id="ciou">
 		<dynamic-content language-id="es_ES"><![CDATA[<div class="journal-content-article">
-	<h2>Card Carousel</h2>
+	<h1>Card Carousel</h1>
 	<p>You can choose the number of items that you want to show per slide( 1, 2, 3, 4, ...). Also, you can choose the number of items per slide in each screen size. LG, MD, SM and X and the breakpoints where they are activated.</p>
-	<h3>Template Custom Fields</h3>
-	<h4>Layout Display</h4>
+	<h2>Template Custom Fields</h2>
+	<h3>Layout Display</h3>
 	<div class="row">
 		
 		<div class="col-md-3 col-sm-4 col-xs-12">
@@ -128,7 +128,7 @@
 
 	</div>
 
-	<h4>Card Fields</h4>
+	<h3>Card Fields</h3>
 	<div class="row">
 	<div class="col-md-3 col-sm-4 col-xs-12">
 		<div class="card card-horizontal">

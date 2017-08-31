@@ -3,11 +3,11 @@
 <root available-locales="es_ES" default-locale="es_ES">
 	<dynamic-element name="content" type="text_area" index-type="keyword" instance-id="7yjm">
 		<dynamic-content language-id="es_ES"><![CDATA[<div class="journal-content-article">
-	<h2>Image Gallery</h2>
+	<h1>Carousel</h1>
 	<p>This is a responsive image carousel where you can add all images you want to the carousel and custon their fields</p>
 	
-	<h3>Template Custom Fields</h3>
-	<h4>Image Fields</h4>
+	<h2>Template Custom Fields</h2>
+	<h3>Image Fields</h3>
 	<div class="row">
 	<div class="col-md-3 col-sm-4 col-xs-12">
 		<div class="card card-horizontal">

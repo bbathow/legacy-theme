@@ -13,6 +13,6 @@
 		<dynamic-element name="Title" instance-id="wspn" type="text" index-type="keyword">
 			<dynamic-content language-id="es_ES"><![CDATA[Go to Footer]]></dynamic-content>
 		</dynamic-element>
-		<dynamic-content language-id="es_ES"><![CDATA[6@public@20147]]></dynamic-content>
+		<dynamic-content language-id="es_ES"></dynamic-content>
 	</dynamic-element>
 </root>
