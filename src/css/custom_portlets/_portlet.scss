@@ -53,5 +53,22 @@
 			}
 		}	
     }
+    &.portlet-noPaddingMarginWhite {
+	
+		.portlet{
+			margin-bottom: 0;
+			margin-top: 0;
+		
+			.portlet-content {
+				padding: 0;
+				border: 0;
+				background: $backgroundPortlet;
+				margin-left: -20px;
+				margin-right: -20px;
+				float: none;
+				width: initial;				
+			}
+		}	
+    }	
 	
 }

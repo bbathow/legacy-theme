@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<root available-locales="es_ES" default-locale="es_ES">
+	<dynamic-element name="Content" type="text_area" index-type="keyword" instance-id="ilyt">
+		<dynamic-content language-id="es_ES"><![CDATA[<h2>Pre-Built Dummy Websites</h2>
+<h3>easy to install and customise</h3>
+<p>The7 comes with 26 (and counting) pre-made dummy websites complete with exclusive Slider Revolution and Visual Composer templates. They all can be imported in a few clicks, mixed and matched to become a solid foundation for your site.</p>]]></dynamic-content>
+	</dynamic-element>
+	<dynamic-element name="Button" type="link_to_layout" index-type="keyword" instance-id="lpzz">
+		<dynamic-element name="ButtonText" instance-id="yxbu" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[View All]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-element name="Title" instance-id="spdm" type="text" index-type="keyword">
+			<dynamic-content language-id="es_ES"><![CDATA[Go to Footer]]></dynamic-content>
+		</dynamic-element>
+		<dynamic-content language-id="es_ES"><![CDATA[6@public@20147]]></dynamic-content>
+	</dynamic-element>
+</root>
