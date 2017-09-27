@@ -7,19 +7,19 @@
 	</compatibility>
 	<theme id="legacy" name="Legacy">
 		<template-extension>ftl</template-extension>
-		<portlet-decorator id="barebone" name="Barebone">
-			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
-		</portlet-decorator>
-		<portlet-decorator id="borderless" name="Borderless">
-			<portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
-		</portlet-decorator>
 		<portlet-decorator id="decorate" name="Decorate">
 			<default-portlet-decorator>true</default-portlet-decorator>
 			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
 		</portlet-decorator>
+        <portlet-decorator id="barebone" name="Barebone">
+            <portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
+        </portlet-decorator>
+        <portlet-decorator id="borderless" name="Borderless">
+            <portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
+        </portlet-decorator>
 		<portlet-decorator id="nopadding" name="Without Padding">
 			<portlet-decorator-css-class>portlet-noPadding</portlet-decorator-css-class>
-		</portlet-decorator>		
+		</portlet-decorator>
 		<portlet-decorator id="fullwidth" name="Full Width">
 			<portlet-decorator-css-class>portlet-fullWidth</portlet-decorator-css-class>
 		</portlet-decorator>
@@ -28,7 +28,7 @@
 		</portlet-decorator>
 		<portlet-decorator id="nopaddingmarginwhite" name="White Without Padding and Margin ">
 			<portlet-decorator-css-class>portlet-noPaddingMarginWhite</portlet-decorator-css-class>
-		</portlet-decorator>			
+		</portlet-decorator>
 
 		<settings>
 			<setting configurable="true" key="Show-Breadcrumbs" type="checkbox" value="false"/>
@@ -48,27 +48,27 @@
                                     var target = A.one('#[@NAMESPACE@]Brand-Color');
                                     target.attr('readonly', 'readonly');
                                     var currentValue = target.val();
- 
- 
+
+
                                     setTimeout(function() {
- 
+
                                         target.ancestor().append("<span class='glyphicon glyphicon-pencil' aria-hidden='true' style='top: -30px;left: calc(100% - 25px);color: #869cad;'></span>");
                                         target.ancestor().append("<div id='[@NAMESPACE@]PortalMainColorPicker1'></div>");
- 
+
                                             var [@NAMESPACE@]PortalMainColorPicker1 = new A.ColorPickerPopover(
                                                 {
 													trigger: target
                                                 }
                                             ).render('#[@NAMESPACE@]PortalMainColorPicker1');
- 
+
                                             [@NAMESPACE@]PortalMainColorPicker1.on('select',
                                                 function(event) {
                                                     var hex = event.color;
- 
+
                                                     target.val(hex);
                                                     target.setStyle('backgroundColor', hex);
-													
-													
+
+
 
 													var rgb = hexToRgb(hex);
 
@@ -84,41 +84,41 @@
 
 														target.setStyle('color','#869cad');
 														target.next().setStyle('color','#869cad');
-														
+
 													} else {
-													
+
 														target.setStyle('color','#ffffff');
 														target.next().setStyle('color','#ffffff');
-														
+
 													};
 
                                                 }
                                             );
-											
+
 											function hexToRgb(hex) {
                                                 var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
                                                 hex = hex.replace(shorthandRegex, function(m, r, g, b) {
                                                     return r + r + g + g + b + b;
                                                 });
- 
+
                                                 var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
                                                 return result ? {
                                                     r: parseInt(result[1], 16),
                                                     g: parseInt(result[2], 16),
                                                     b: parseInt(result[3], 16)
                                                 } : null;
-                                            };											
-											
- 
+                                            };
+
+
                                     }, 1000);
                                 }
                             );
- 
+
                     ]]>
-            </setting>        
- 
+            </setting>
+
             <setting configurable="true" key="Brand-Color-Text" type="text" value="#fff">
-			
+
                     <![CDATA[
                             AUI().ready(
                                 'aui-color-picker-popover',
@@ -127,27 +127,27 @@
                                     var target = A.one('#[@NAMESPACE@]Brand-Color-Text');
                                     target.attr('readonly', 'readonly');
                                     var currentValue = target.val();
- 
- 
+
+
                                     setTimeout(function() {
- 
+
                                         target.ancestor().append("<span class='glyphicon glyphicon-pencil' aria-hidden='true' style='top: -30px;left: calc(100% - 25px);color: #869cad;'></span>");
                                         target.ancestor().append("<div id='[@NAMESPACE@]PortalMainColorPicker1'></div>");
- 
+
                                             var [@NAMESPACE@]PortalMainColorPicker1 = new A.ColorPickerPopover(
                                                 {
 													trigger: target
                                                 }
                                             ).render('#[@NAMESPACE@]PortalMainColorPicker1');
- 
+
                                             [@NAMESPACE@]PortalMainColorPicker1.on('select',
                                                 function(event) {
                                                     var hex = event.color;
- 
+
                                                     target.val(hex);
                                                     target.setStyle('backgroundColor', hex);
-													
-													
+
+
 
 													var rgb = hexToRgb(hex);
 
@@ -163,41 +163,41 @@
 
 														target.setStyle('color','#869cad');
 														target.next().setStyle('color','#869cad');
-														
+
 													} else {
-													
+
 														target.setStyle('color','#ffffff');
 														target.next().setStyle('color','#ffffff');
-														
+
 													};
 
                                                 }
                                             );
-											
+
 											function hexToRgb(hex) {
                                                 var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
                                                 hex = hex.replace(shorthandRegex, function(m, r, g, b) {
                                                     return r + r + g + g + b + b;
                                                 });
- 
+
                                                 var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
                                                 return result ? {
                                                     r: parseInt(result[1], 16),
                                                     g: parseInt(result[2], 16),
                                                     b: parseInt(result[3], 16)
                                                 } : null;
-                                            };											
-											
- 
+                                            };
+
+
                                     }, 1000);
                                 }
                             );
- 
-                    ]]>	
-			
+
+                    ]]>
+
 			</setting>
 			<setting configurable="true" key="Gray-Base" type="text" value="#444">
-			
+
                     <![CDATA[
                             AUI().ready(
                                 'aui-color-picker-popover',
@@ -206,27 +206,27 @@
                                     var target = A.one('#[@NAMESPACE@]Gray-Base');
                                     target.attr('readonly', 'readonly');
                                     var currentValue = target.val();
- 
- 
+
+
                                     setTimeout(function() {
- 
+
                                         target.ancestor().append("<span class='glyphicon glyphicon-pencil' aria-hidden='true' style='top: -30px;left: calc(100% - 25px);color: #869cad;'></span>");
                                         target.ancestor().append("<div id='[@NAMESPACE@]PortalMainColorPicker1'></div>");
- 
+
                                             var [@NAMESPACE@]PortalMainColorPicker1 = new A.ColorPickerPopover(
                                                 {
 													trigger: target
                                                 }
                                             ).render('#[@NAMESPACE@]PortalMainColorPicker1');
- 
+
                                             [@NAMESPACE@]PortalMainColorPicker1.on('select',
                                                 function(event) {
                                                     var hex = event.color;
- 
+
                                                     target.val(hex);
                                                     target.setStyle('backgroundColor', hex);
-													
-													
+
+
 
 													var rgb = hexToRgb(hex);
 
@@ -242,38 +242,38 @@
 
 														target.setStyle('color','#869cad');
 														target.next().setStyle('color','#869cad');
-														
+
 													} else {
-													
+
 														target.setStyle('color','#ffffff');
 														target.next().setStyle('color','#ffffff');
-														
+
 													};
 
                                                 }
                                             );
-											
+
 											function hexToRgb(hex) {
                                                 var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
                                                 hex = hex.replace(shorthandRegex, function(m, r, g, b) {
                                                     return r + r + g + g + b + b;
                                                 });
- 
+
                                                 var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
                                                 return result ? {
                                                     r: parseInt(result[1], 16),
                                                     g: parseInt(result[2], 16),
                                                     b: parseInt(result[3], 16)
                                                 } : null;
-                                            };											
-											
- 
+                                            };
+
+
                                     }, 1000);
                                 }
                             );
- 
-                    ]]>	
-			
+
+                    ]]>
+
 			</setting>
 
 			<setting configurable="true" key="Navbar-Bg" type="text" value="#333333">
@@ -285,27 +285,27 @@
                                     var target = A.one('#[@NAMESPACE@]Navbar-Bg');
                                     target.attr('readonly', 'readonly');
                                     var currentValue = target.val();
- 
- 
+
+
                                     setTimeout(function() {
- 
+
                                         target.ancestor().append("<span class='glyphicon glyphicon-pencil' aria-hidden='true' style='top: -30px;left: calc(100% - 25px);color: #869cad;'></span>");
                                         target.ancestor().append("<div id='[@NAMESPACE@]PortalMainColorPicker1'></div>");
- 
+
                                             var [@NAMESPACE@]PortalMainColorPicker1 = new A.ColorPickerPopover(
                                                 {
 													trigger: target
                                                 }
                                             ).render('#[@NAMESPACE@]PortalMainColorPicker1');
- 
+
                                             [@NAMESPACE@]PortalMainColorPicker1.on('select',
                                                 function(event) {
                                                     var hex = event.color;
- 
+
                                                     target.val(hex);
                                                     target.setStyle('backgroundColor', hex);
-													
-													
+
+
 
 													var rgb = hexToRgb(hex);
 
@@ -321,39 +321,39 @@
 
 														target.setStyle('color','#869cad');
 														target.next().setStyle('color','#869cad');
-														
+
 													} else {
-													
+
 														target.setStyle('color','#ffffff');
 														target.next().setStyle('color','#ffffff');
-														
+
 													};
 
                                                 }
                                             );
-											
+
 											function hexToRgb(hex) {
                                                 var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
                                                 hex = hex.replace(shorthandRegex, function(m, r, g, b) {
                                                     return r + r + g + g + b + b;
                                                 });
- 
+
                                                 var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
                                                 return result ? {
                                                     r: parseInt(result[1], 16),
                                                     g: parseInt(result[2], 16),
                                                     b: parseInt(result[3], 16)
                                                 } : null;
-                                            };											
-											
- 
+                                            };
+
+
                                     }, 1000);
                                 }
                             );
- 
+
                     ]]>
-            </setting>        
- 			
+            </setting>
+
 			<setting configurable="true" key="Navbar-Color" type="text" value="#ffffff">
                     <![CDATA[
                             AUI().ready(
@@ -363,27 +363,27 @@
                                     var target = A.one('#[@NAMESPACE@]Navbar-Color');
                                     target.attr('readonly', 'readonly');
                                     var currentValue = target.val();
- 
- 
+
+
                                     setTimeout(function() {
- 
+
                                         target.ancestor().append("<span class='glyphicon glyphicon-pencil' aria-hidden='true' style='top: -30px;left: calc(100% - 25px);color: #869cad;'></span>");
                                         target.ancestor().append("<div id='[@NAMESPACE@]PortalMainColorPicker1'></div>");
- 
+
                                             var [@NAMESPACE@]PortalMainColorPicker1 = new A.ColorPickerPopover(
                                                 {
 													trigger: target
                                                 }
                                             ).render('#[@NAMESPACE@]PortalMainColorPicker1');
- 
+
                                             [@NAMESPACE@]PortalMainColorPicker1.on('select',
                                                 function(event) {
                                                     var hex = event.color;
- 
+
                                                     target.val(hex);
                                                     target.setStyle('backgroundColor', hex);
-													
-													
+
+
 
 													var rgb = hexToRgb(hex);
 
@@ -399,60 +399,60 @@
 
 														target.setStyle('color','#869cad');
 														target.next().setStyle('color','#869cad');
-														
+
 													} else {
-													
+
 														target.setStyle('color','#ffffff');
 														target.next().setStyle('color','#ffffff');
-														
+
 													};
 
                                                 }
                                             );
-											
+
 											function hexToRgb(hex) {
                                                 var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
                                                 hex = hex.replace(shorthandRegex, function(m, r, g, b) {
                                                     return r + r + g + g + b + b;
                                                 });
- 
+
                                                 var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
                                                 return result ? {
                                                     r: parseInt(result[1], 16),
                                                     g: parseInt(result[2], 16),
                                                     b: parseInt(result[3], 16)
                                                 } : null;
-                                            };											
-											
- 
+                                            };
+
+
                                     }, 1000);
                                 }
                             );
- 
-                    ]]>
-            </setting>   	
 
-	
+                    ]]>
+            </setting>
+
+
             <setting configurable="true" key="Footer-Links" type="text" value="/footer"/>
 
             <setting configurable="true" key="Show-Facebook-Link" type="checkbox" value="true"/>
             <setting configurable="true" key="Facebook-Link" type="text" value="http://www.facebook.com"/>
-            
+
             <setting configurable="true" key="Show-Twitter-Link" type="checkbox" value="true"/>
             <setting configurable="true" key="Twitter-Link" type="text" value="http://www.twitter.com"/>
-            
+
             <setting configurable="true" key="Show-Instagram-Link" type="checkbox" value="true"/>
             <setting configurable="true" key="Instagram-Link" type="text" value="http://www.instagram.com"/>
-            
+
             <setting configurable="true" key="Show-Linkedin-Link" type="checkbox" value="true"/>
             <setting configurable="true" key="Linkedin-Link" type="text" value="http://www.linkedin.com"/>
-            
+
             <setting configurable="true" key="Show-Youtube-Link" type="checkbox" value="true"/>
             <setting configurable="true" key="Youtube-Link" type="text" value="http://www.youtube.com"/>
-            
+
             <setting configurable="true" key="Show-Google-Plus-Link" type="checkbox" value="true"/>
             <setting configurable="true" key="Google-Plus-Link" type="text" value="https://plus.google.com"/>
 
- 		</settings>	                                                                                                            
+ 		</settings>
 	</theme>
 </look-and-feel>

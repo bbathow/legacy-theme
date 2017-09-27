@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-
-<root available-locales="es_ES" default-locale="es_ES">
-	<dynamic-element name="content" type="text_area" index-type="keyword" instance-id="hfdh">
-		<dynamic-content language-id="es_ES"><![CDATA[<h2>Gallery Title</h2>]]></dynamic-content>
-	</dynamic-element>
-</root>
