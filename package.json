@@ -18,5 +18,8 @@
 	},
 	"publishConfig": {
 		"tag": "7_0_x"
+	},
+	"dependencies": {
+		"owl.carousel": "^2.2.0"
 	}
 }
